@@ -1,1 +1,0 @@
-# Calculation of In-line values 
