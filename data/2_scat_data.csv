@@ -72,7 +72,7 @@ lab_date,preparor,site_id,segment_id,date_collected,month,wetweight_grams,diamet
 9/21/22,LLO,GCTL,GCTL_S4_14Sep2021,9/14/21,september,1.225,8.3,0.7157,yes,no,yes,yes,no,
 9/21/22,LLO,GCTL,GCTL_S1_14Sep2021,9/14/21,september,1.008,10.2,0.706,no,yes,no,yes,no,need to locate in Journal H
 8/31/22,LLO,GC15H,GC15H_S1_11Sep2021,9/11/21,september,0.818,12.1,0.6522,no,no,no,yes,yes,
-10/10/22,LLO,GCNRM,GCNRM_S1_26Jun2021,7/26/21,july,1.416,12.1,0.3241,no,yes,no,no,no,date needs to be confirmed
+10/10/22,LLO,GCNRM,GCNRM_S1_26Jul2021,7/26/21,july,1.416,12.1,0.3241,no,yes,no,no,no,date originally written as 6/29/21
 9/21/22,LLO,GCTL,GCTL_S3_14Sep2021,9/14/21,september,0.831,14,0.7225,no,yes,no,yes,yes,
 9/27/22,LLO,GCBH,GCBH_S4_05Dec2021,12/5/21,december,1.402,8.7,1.1037,no,yes,no,yes,yes,
 9/12/22,LLO,GCBH,GCBH_S1_12Sep2021,9/12/21,september,0.709,9.1,0.5728,no,yes,no,yes,no,need to locate in Journal H
