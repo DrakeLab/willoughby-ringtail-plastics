@@ -10,8 +10,24 @@ frags <- read.csv("data/3_fragment_data.csv", strip.white = T)
 
 # merge scat and site data 
 scat <- left_join(scat, site, by = "site_id")
-scat <- scat %>% dplyr::filter(is.na(anthropogenic_presence) == F)
 n_scat <- nrow(scat)
+
+# construct Table 1.: full population frequency
+F_frags <- frags %>% 
+  group_by(fragment_type) %>% 
+  summarise(`F` = n_distinct(segment_id),
+            frags = n(),
+            weight = sum(fragment_weight))
+total_frags <- sum(F_frags$`F`)
+total_weight <- sum(F_frags$weight)
+
+# make into percentages 
+F_frags$FO <- round(F_frags$`F`/83*100, 2)
+F_frags$RFO <- round(F_frags$`F` / total_frags*100, 2)
+F_frags$RW <- round(F_frags$weight /total_weight*100, 2)
+
+# Ouptut Table 1 
+print(F_frags[c(2,3,5,1,4), c(1,2,5:7)]) 
 
 # calculate frequency of occurrence by site
 site_F <- scat %>% 
@@ -22,12 +38,33 @@ site_F <- scat %>%
             n_vertebrate = sum(vertebrate_presence == "yes"),
             n_plant = sum(plant_presence== "yes"))
 
+site_F_long <- site_F %>% 
+  pivot_longer(
+    cols = starts_with("n_"),
+    names_to = "diet_category",
+    values_to = "frequency",
+    values_drop_na = TRUE
+  )
+
+site_F_long$site_type = ifelse(site_F_long$vehicle_access == "no", "wilderness (n = 45)","vehicle-access (n = 38)")
+site_F_long$FO <- ifelse(site_F_long$vehicle_access == "no", round(site_F_long$frequency/45*100,2),round(site_F_long$frequency/38*100,2))
+
+site_by_diet_plot <- ggplot(site_F_long, aes(x = reorder(diet_category, -FO), y = FO, fill = diet_category)) + 
+  geom_bar(stat="identity") + 
+  facet_grid(~site_type) + 
+  labs(x = "diet category", y = "Frequency of Occurrence (%)") + 
+  scale_y_continuous(limits = c(0,100)) + 
+  theme_classic() + 
+  # annotate("text", )
+site_by_diet_plot 
+
+
+
 ## make a stacked bar plot of % relative frequency of occurrence by site
 # merge frags and site data 
 frags <- left_join(frags, site, by = "site_id")
-frags <- frags %>% 
-  dplyr::filter(date_added != "")
 n_frags <- nrow(frags)
+frags$fragment_weight <- as.numeric(frags$fragment_weight)
 sum_frags <- sum(frags$fragment_weight)
 
 # make a site type table with frequency and sum weight 
@@ -100,17 +137,17 @@ site_by_metric <- ggplot(site_diet_metrics , aes(x = vehicle_access, y = value, 
 # side by side version 
 library(gridExtra)
 site_by_pctFO <- ggplot(subset(site_diet_metrics, metric=="pct_frequency_occurrence"), aes(x = vehicle_access, y = value, fill = diet_category)) + 
-  geom_bar(position="stack", stat="identity") + 
+  geom_bar(position="dodge", stat="identity") + 
   theme_classic() + 
   theme(legend.position="none") + 
-  labs(title="Frequency of Occurrence (%)", y = "Scat (n = 71)") + 
+  labs(title="Frequency of Occurrence (%)", y = "Scat (n = 83)") + 
   scale_x_discrete(name ="", limits=c("yes", "no"), 
                    labels=c("Vehicle Access", "Wilderness")) 
 site_by_pctFR <- ggplot(subset(site_diet_metrics,metric=="pct_relative_frequency"), aes(x = vehicle_access, y = value, fill = diet_category)) + 
    geom_bar(position="stack", stat="identity") + 
   theme_classic() + 
   theme(legend.position="none")  + 
-  labs(title="Relative Frequency of Occurrence (%)", y = "Diet items (n = 183)") + 
+  labs(title="Relative Frequency of Occurrence (%)", y = "Percent of Diet items (n = 205)") + 
   scale_x_discrete(name ="", limits=c("yes", "no"), 
                    labels=c("Vehicle Access", "Wilderness")) 
 site_by_pctW <- ggplot(subset(site_diet_metrics,metric=="pct_weight"), aes(x = vehicle_access, y = value, fill = diet_category)) + 
@@ -121,6 +158,6 @@ site_by_pctW <- ggplot(subset(site_diet_metrics,metric=="pct_weight"), aes(x = v
                    labels=c("Vehicle Access", "Wilderness")) 
 # make the plot 
 
-png(filename="figures/Figure1.png")
+png(filename="figures/Figure1.png", width = 6.5, height = 4, units = 'in', res = 300)
 grid.arrange(site_by_pctFO, site_by_pctFR, site_by_pctW, nrow = 1)
 dev.off()
