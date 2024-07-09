@@ -29,7 +29,8 @@ Study design:
 │        ├── 2_scat_data.csv                         | datafile with scat segment information
 │        ├── 3_fragment_data.csv                     | datafile with plastic-present subset fragment information
 │        ├── 4_plastic_data.csv                      | datafile with anthropogenic items tested for plastic content
-│        └── 5_contamination_control.csv             | datafile with tape test information per laboratory day 
+│        └── 5_contamination_control.csv             | datafile with tape test information per laboratory day
+│        └── spatial                                 | shapefiles for Grand Canyon exceed github file size requirements and are stored here:
 ├── scripts/                                               
 │     ├── 0_in_line_calculations.R                   | script to calculate any values present in the text
 │     ├── 1_map_site_locations.R                     | script to map the study locations
