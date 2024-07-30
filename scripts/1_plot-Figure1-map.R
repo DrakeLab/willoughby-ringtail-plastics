@@ -34,12 +34,14 @@ GRCA <- readOGR("data/grca_tracts/GRCA_boundary.shp")
 grand_canyon <- st_transform(grand_canyon, crs = st_crs("+proj=longlat +datum=WGS84"))
 
 # Plot the US map with Arizona highlighted
+png(filename="figures/Figure1Ai.png", width = 4, height =3, unit = 'in', res = 300)
 plot1 <- ggplot() +
   geom_polygon(data = us_contiguous , aes(x = long, y = lat, group = group), fill = "white", color = "black", size = 0.5) +
   geom_polygon(data = arizona, aes(x = long, y = lat, group = group), fill = "darkgrey", color = NA, size = 0.5) +
   geom_polygon(data=GRCA, aes(x = long, y = lat, group = group), fill ="lightgrey", size = 0.7) +
   geom_rect(aes(xmin = -112.0081, xmax = -112.2081, ymin = 36.02842, ymax = 36.22842), color = "black", fill = "black")  +
   theme_map() 
+dev.off()
   
 # Define the center coordinates and zoom level for study area map
 lon_center <- -112.1081
@@ -68,18 +70,24 @@ data <- data.frame(
 )
 
 # Create a inset map with study points plot
+png(filename="figures/Figure1Aii.png", width = 4, height = 4, unit = 'in', res = 300)
 plot2 <- ggmap(map) + # background map
   geom_sf(data = grand_canyon, color = "black", size = 0.5, alpha = 0.5) + # provides white overlay to mute background terrain
   geom_sf(data=bat, fill ="darkgreen",color ="darkgreen",  size = 0.7) +# bright angel trail
   geom_point(data = data, aes(x = lon, y = lat, shape = shape, color = color), size = 4) +
   scale_color_manual(values = c("#68534D", "darkgreen","#68534D"), guide = "none") +
   scale_shape_manual(labels = c("backcountry", "frontcountry"),
-                     values = c("triangle" = 15, "circle" = 17)) +
+                     values = c("triangle" = 15, "circle" = 17), guide = "none") +
   labs(x = "Longitude",
        y = "Latitude", 
-       shape = "Tourist Access") +
+      # shape = "Tourist Access"
+      ) +
   theme_minimal()
+dev.off()
 
+# save the figure 
+png(filename="figures/Figure1_SiteMap.png", width = 4, height = 3, unit = 'in' res = 300)
 ggdraw()+
   draw_plot(plot1)+
   draw_plot(plot2,height=0.6,x=0.1,y=0.3)
+dev.off()
