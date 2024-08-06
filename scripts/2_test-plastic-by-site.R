@@ -7,6 +7,10 @@ site <- read.csv("data/1_site_data.csv", strip.white = T)
 scat <- read.csv(file = "data/2_scat_data.csv") # scat segment data
 scat <- left_join(scat, site, by = "site_id")
 
+# remove scats not confirmed as ringtail 
+scat <- scat %>% 
+  dplyr::filter(ringtail_confirmed == "yes")
+
 # format contingency table of site (vehicle access YN) by plastic (YN)
 site_plastic_tbl <- scat %>% 
   group_by(vehicle_access, plastic_presence) %>% 
