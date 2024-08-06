@@ -1,12 +1,12 @@
-site_id,name,site_area,structured,vehicle_access
-GC15H,1.5 mile house on Bright Angel Trail 1.5 mile house,Rim,no,no
-GCBAC,Bright Angel Campground,Inner Canyon,no,no
-GCBAR,Bright Angel Hotel Roof,Rim,yes,yes
-GCBB,Boat Beach ,Inner Canyon,no,no
-GCBH,BunkHouse,Inner Canyon,yes,no
-GCETRO,El Tovar Hotel,Rim,yes,yes
-GCJH,NPS Staff house,Inner Canyon,yes,no
-GCNRM,GCNRM,Rim,no,yes
-GCTC,Bright Angel Trash Compactor Area,Inner Canyon,no,no
-GCTL,Thunderbird Lodge ,Rim,yes,yes
-GCWP,Water Plant,Inner Canyon,no,no
+site_id,name,site_area,structured,vehicle_access,tourism_type
+GC15H,1.5 mile house on Bright Angel Trail 1.5 mile house,Rim,no,no,backcountry
+GCBAC,Bright Angel Campground,Inner Canyon,no,no,backcountry
+GCBAR,Bright Angel Hotel Roof,Rim,yes,yes,frontcountry
+GCBB,Boat Beach ,Inner Canyon,no,no,backcountry
+GCBH,BunkHouse,Inner Canyon,yes,no,backcountry
+GCETRO,El Tovar Hotel,Rim,yes,yes,frontcountry
+GCJH,NPS Staff house,Inner Canyon,yes,no,backcountry
+GCNRM,GCNRM,Rim,no,yes,frontcountry
+GCTC,Bright Angel Trash Compactor Area,Inner Canyon,no,no,backcountry
+GCTL,Thunderbird Lodge ,Rim,yes,yes,frontcountry
+GCWP,Water Plant,Inner Canyon,no,no,backcountry
