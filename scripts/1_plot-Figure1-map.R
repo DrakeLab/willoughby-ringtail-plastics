@@ -52,8 +52,14 @@ bc_pc_plot <- ggplot(bc_piechart, aes(x="", y=scat_samples, fill=plastic_status)
   scale_fill_manual(values=c("#10A870", "#F5A6E6")) +
   labs(title="backcountry") + 
   theme_void() +  # remove background, grid, numeric labels
-  theme(plot.title = element_text(hjust = 0.5, face="bold"))  
+  theme(plot.title = element_text(hjust = 0.5, face="bold"), 
+        legend.position="none")  
+
+## save the plot as png
+png(filename="figures/Figure1Aiii.png", width = 4, height = 4, unit = 'in', res = 300)
+par(bg=NA)
 bc_pc_plot
+dev.off()
 
 ## create frontcountry plot object
 fc_pc_plot <- ggplot(fc_piechart, aes(x="", y=scat_samples, fill=plastic_status)) +
@@ -63,9 +69,13 @@ fc_pc_plot <- ggplot(fc_piechart, aes(x="", y=scat_samples, fill=plastic_status)
   scale_fill_manual(values=c("#8D7068", "#F5A6E6")) + 
   labs(title="frontcountry") + 
   theme_void() + # remove background, grid, numeric labels
-  theme(plot.title = element_text(hjust = 0.5, face="bold"))  
+  theme(plot.title = element_text(hjust = 0.5, face="bold"), 
+        legend.position="none")  
+  
+png(filename="figures/Figure1Aiv.png", width = 4, height = 4, unit = 'in', res = 300)
+par(bg=NA)
 fc_pc_plot
-
+dev.off()
 
 # Make map for Figure 1A background 
 ## set your Google Maps API key here
@@ -115,6 +125,10 @@ bat <- subset(NPS_trails, TrailName == "Bright Angel")
 # Convert the shapefile to the same projection as Google Maps
 bat  <- st_transform(bat, crs = st_crs("+proj=longlat +datum=WGS84"))
 bat  <- st_zm(bat)
+
+# remove trail before 1.5 mile house (36°03'37.5"N 112°08'21.4"W)
+bat_bc <- bat 
+bat_bc$geometry[[1]][[1]]  <- bat_bc$geometry[[1]][[1]][c(455:1991),c(1:2)]
  
 ### define the data for study sites 
 data <- data.frame(
@@ -128,7 +142,7 @@ data <- data.frame(
 png(filename="figures/Figure1Aii.png", width = 4, height = 4, unit = 'in', res = 300)
 plot2 <- ggmap(map) + # background map
   geom_sf(data = grand_canyon, color = "black", size = 0.5, alpha = 0.5) + # provides white overlay to mute background terrain
-  geom_sf(data = bat, fill ="#10A870",color ="#10A870",  size = 0.7) +# bright angel trail
+  geom_sf(data = bat_bc, fill ="#10A870",color ="#10A870",  size = 0.7) +# bright angel trail
   geom_point(data = data, aes(x = lon, y = lat, shape = shape, color = color), size = 4) +
   scale_color_manual(values = c("#8D7068", "#10A870","#8D7068"), guide = "none") +
   scale_shape_manual(labels = c("backcountry", "frontcountry"),
