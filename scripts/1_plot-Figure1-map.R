@@ -80,8 +80,8 @@ dev.off()
 # Make map for Figure 1A background 
 ## set your Google Maps API key here
 register_google(key = "AIzaSyAzKAajDAHybjStRcm9Ckch3E3IKrb4jmw")
-register_stadiamaps(key = "bb626491-1172-4176-8659-714d7fe2d859") # this expires 8/13/2024
-  
+register_stadiamaps(key = "da6d10ef-d122-4fdd-a9f7-8037e18ffd7a") # this expires 8/13/2024
+
 ## get state and country map data from ggplot
 states <- map_data("state")
 world <- map_data("world")
@@ -116,7 +116,7 @@ lat_center <- 36.12842
 zoom <- 12
 
 ## get the background map from Stadia
-map <- get_map(location = c(lon = lon_center, lat = lat_center), zoom = zoom, maptype = "stamen_terrain_background")
+map <- get_map(location = c(lon = -112.1081, lat =36.12842), zoom =12, maptype = "stamen_terrain_background", style="feature:poi|element:labels|visibility:off", source = "stadia")
 
 ## load the shapefile for Bright Angel Trail
 NPS_trails <- st_read("data/grca_tracts/GRCA_TRANS_Trail_ln/GRCA_TRANS_Trail_ln.shp")
@@ -133,9 +133,9 @@ bat_bc$geometry[[1]][[1]]  <- bat_bc$geometry[[1]][[1]][c(455:1991),c(1:2)]
 ### define the data for study sites 
 data <- data.frame(
   lat = c(36.053524, 36.10588, 36.200674),
-  lon = c(-112.138886, -112.094753,	-112.0532175)
- #  shape = c("triangle", "circle", "triangle"), 
- #  color = c("#68534D", "#D2D68D","#68534D")
+  lon = c(-112.138886, -112.094753,	-112.0532175),
+ shape = c("triangle", "circle", "triangle"), 
+ color = c("#8D7068", "#10A870","#8D7068")
 )
 
 # Create a inset map with study points plot
