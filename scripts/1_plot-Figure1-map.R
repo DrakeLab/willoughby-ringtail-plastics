@@ -147,6 +147,7 @@ data <- data.frame(
 # Create a inset map with study points plot
 plot2 <- ggmap(map) + # background map
   geom_sf(data = grand_canyon, color = "black", size = 0.5, alpha = 0.5, inherit.aes = FALSE) + # provides white overlay to mute background terrain
+  #scale_x_discrete(breaks=c(-112.16,-112.12,-112.08, -112.04), labels=c("-112.16°W","-112.12°W","-112.08°W", "-112.04°W")) +
   geom_sf(data = bat_bc, fill ="#10A870",color ="#10A870",  size = 0.7, inherit.aes = FALSE) +# bright angel trail
   geom_point(data = data, aes(x = lon, y = lat, shape = shape, color = color), size = 4) +
   scale_color_manual(values = c( "#10A870","#8D7068","#8D7068"), guide = "none") +
