@@ -44,6 +44,7 @@ site_plant_mat <- site_plant_mat %>%
     plant_yes = yes
   )
 site_plant_mat$vehicle_access <- NULL
+
 # make a matrix 
 site_plant_mat <- as.matrix(site_plant_mat)
 

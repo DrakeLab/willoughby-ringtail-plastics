@@ -1,12 +1,20 @@
-site_id,name,site_area,structured,vehicle_access,tourism_type
-GC15H,1.5 mile house on Bright Angel Trail 1.5 mile house,Rim,no,no,backcountry
-GCBAC,Bright Angel Campground,Inner Canyon,no,no,backcountry
-GCBAR,Bright Angel Hotel Roof,Rim,yes,yes,frontcountry
-GCBB,Boat Beach ,Inner Canyon,no,no,backcountry
-GCBH,BunkHouse,Inner Canyon,yes,no,backcountry
-GCETRO,El Tovar Hotel,Rim,yes,yes,frontcountry
-GCJH,NPS Staff house,Inner Canyon,yes,no,backcountry
-GCNRM,GCNRM,Rim,no,yes,frontcountry
-GCTC,Bright Angel Trash Compactor Area,Inner Canyon,no,no,backcountry
-GCTL,Thunderbird Lodge ,Rim,yes,yes,frontcountry
-GCWP,Water Plant,Inner Canyon,no,no,backcountry
+unique_site,site_id,name,site_area,park_area,ringtail_scat,structured,vehicle_access,lat,long
+GC15H,GC15H,1.5 mile house on Bright Angel Trail,GCBAC,Inner Canyon,yes,no,no,,
+GCBAC,GCBAC,Bright Angel Campground,GCBAC,Inner Canyon,yes,no,no,,
+GCBAR,GCBAR,Bright Angel Hotel Roof,GCVillage,Rim,yes,yes,yes,,
+GCBB,GCBB,Boat Beach ,GCBAC,Inner Canyon,yes,no,no,,
+GCBH,GCBH,BunkHouse,GCBAC,Inner Canyon,yes,yes,no,,
+GCETRO,GCETRO,El Tovar Hotel Office,GCVillage,Rim,yes,yes,yes,,
+GCETRO,GCETCR,El Tovar Restaurant,GCVillage,Rim,yes,yes,yes,,
+GCETRO,GCETRF,El Tovar Refridgerator,GCVillage,Rim,yes,yes,yes,,
+GCJH,GCJH,NPS Staff house,GCBAC,Inner Canyon,yes,yes,no,,
+GCNRM,GCNRM,Motel,GCNRM,Rim,yes,no,yes,,
+GCTL,GCTL,Thunderbird Lodge ,GCVillage,Rim,yes,yes,yes,,
+GCBAC,GCWP,Water Plant,GCBAC,Inner Canyon,yes,no,no,,
+GCBAC,GCTC,Trash Compacter,GCBAC,Inner Canyon,yes,no,no,,
+GCHR,GCHR,Hermit's Rest,GCVillage,Rim,no,yes,yes,,
+GCPP,GCPP,Powell Point,GCVillage,Rim,no,no,yes,,
+GCC,GCC,Clinic Forest,GCVillage,Rim,no,no,yes,,
+GCRT,GCRT,Rim Trail,GCVillage,Rim,no,no,yes,,
+GCNRB,GCNRB,Lodge Basement,GCNRM,Rim,no,yes,yes,,
+GCYL,GCYL,Yavapai Lodge,GCVillage,Rim,no,yes,yes,,

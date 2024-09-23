@@ -36,10 +36,10 @@ scat_by_site <- scat %>%
             diameter_sd = sd(diameter_mm))
 
 # of unique scat samples by site 
-## vehicle-access scats 
+## frontcountry scats 
 scat_vehicle <- scat_by_site[2,2] 
 print(scat_vehicle)
-## wilderness scats 
+## backcountry scats 
 scat_wild <- scat_by_site[1,2] 
 print(scat_wild)
 

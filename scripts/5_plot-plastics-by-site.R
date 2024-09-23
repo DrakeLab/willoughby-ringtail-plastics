@@ -17,15 +17,21 @@ plastic_frags <- left_join(plastic_frags, site, by= "site_id")
 plastic_frags <- left_join(plastic_frags, plastic_type, by= "fragment_id") 
 
 # calculate relative frequency by weight of plastics 
-plastic_frags$plasticRFW <- plastic_frags$fragment_weight / plastic_frags$dryweight_grams
+plastic_frags$plasticRFW <- plastic_frags$fragment_weight / as.numeric(plastic_frags$dryweight_grams)
 
-plasticRFW_by_site <- ggplot(plastic_frags, aes(x =vehicle_access , y = plasticRFW)) + 
+plasticRFW_by_site <- ggplot(plastic_frags, aes(x =tourism_level , y = plasticRFW)) + 
   geom_boxplot() + 
-  geom_point(aes(shape = plastic_type), position = position_jitterdodge(0.5)) + 
-  scale_shape_discrete(labels = c("polyethylene", "polypropylene", "polystyrene")) +
+  geom_point(aes(shape = plastic_type, color = plastic_type), position = position_jitterdodge(0.5)) + 
+  scale_shape_manual(name = "plastic polymer", 
+                     values = c(0,2,5), 
+                     labels = c("polyethylene", "polypropylene", "polystyrene")) + 
+  scale_color_manual(name = "plastic polymer",
+                     values = c("blue", "darkorange", "darkgrey"), 
+                     labels = c("polyethylene", "polypropylene", "polystyrene")) +
+  # scale_x_discrete(name ="Site Area", 
+     #              limits=c("backcountry","frontcountry")) + 
  # guides(shape=guide_legend("Plastic Type")) + 
-  labs(x = "Site Type", y = "Relative Frequency by Weight (grams)", 
-       shape = "plastic type") + 
+  labs(x = "Site Area", y = "Relative Frequency by Weight (grams)") + 
   theme(axis.text.x=element_text(size=12), 
         axis.text.y=element_text(size=12), 
         axis.title=element_text(size=30,face="bold")) + 
