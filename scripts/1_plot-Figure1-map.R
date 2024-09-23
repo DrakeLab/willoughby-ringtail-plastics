@@ -77,11 +77,8 @@ par(bg=NA)
 fc_pc_plot
 dev.off()
 
-# Make map for Figure 1A background 
-## set your Google Maps API key here
-register_google(key = "AIzaSyAzKAajDAHybjStRcm9Ckch3E3IKrb4jmw")
-register_stadiamaps(key = "bb626491-1172-4176-8659-714d7fe2d859") # this expires 8/13/2024
-  
+# Make map for Figure 1A background - Completed the background 
+
 ## get state and country map data from ggplot
 states <- map_data("state")
 world <- map_data("world")
@@ -100,23 +97,32 @@ GRCA <- readOGR("data/grca_tracts/GRCA_boundary.shp")
 ## convert the shapefile to the same projection as Google Maps
 grand_canyon <- st_transform(grand_canyon, crs = st_crs("+proj=longlat +datum=WGS84"))
 
-## plot the US map with Arizona highlighted
-png(filename="figures/Figure1Ai.png", width = 4, height =3, unit = 'in', res = 300)
+## create background admin plot object 
 plot1 <- ggplot() +
   geom_polygon(data = us_contiguous , aes(x = long, y = lat, group = group), fill = "white", color = "black", size = 0.5) +
   geom_polygon(data = arizona, aes(x = long, y = lat, group = group), fill = "darkgrey", color = NA, size = 0.5) +
   geom_polygon(data=GRCA, aes(x = long, y = lat, group = group), fill ="lightgrey", size = 0.7) +
   geom_rect(aes(xmin = -112.0081, xmax = -112.2081, ymin = 36.02842, ymax = 36.22842), color = "black", fill = "black")  +
   theme_map() 
+## plot and save the US map with Arizona highlighted
+png(filename="figures/Figure1Ai.png", width = 4, height =3, unit = 'in', res = 300)
+plot1
 dev.off()
-  
-## define the center coordinates and zoom level for study area map
-lon_center <- -112.1081
-lat_center <- 36.12842
-zoom <- 12
 
-## get the background map from Stadia
-map <- get_map(location = c(lon = lon_center, lat = lat_center), zoom = zoom, maptype = "stamen_terrain_background")
+## QUERIED STAMEN Maps on 8/9/24 
+## set your Google Maps API key here
+## register_google(key = "AIzaSyAzKAajDAHybjStRcm9Ckch3E3IKrb4jmw")
+## register_stadiamaps(key = "da6d10ef-d122-4fdd-a9f7-8037e18ffd7a") # this expires 8/13/2024
+## get the background map from Stadia with center coordinates and zoom level for study area map
+## define the center coordinates and zoom level for study area map
+#### old centroid value
+#### lon_center <- -112.1081
+#### lat_center <- 36.12842
+#### zoom <- 12
+
+## map <- get_stadiamap(bbox = c(-112.187920,36.039938,-112.027588,36.228212), zoom =zoom, maptype = "stamen_terrain_background", source = "stadia")
+## save(map, file = "data/4_background_map.RData")
+load(file = "data/4_background_map.RData") # this loads the above background "map"
 
 ## load the shapefile for Bright Angel Trail
 NPS_trails <- st_read("data/grca_tracts/GRCA_TRANS_Trail_ln/GRCA_TRANS_Trail_ln.shp")
@@ -133,30 +139,34 @@ bat_bc$geometry[[1]][[1]]  <- bat_bc$geometry[[1]][[1]][c(455:1991),c(1:2)]
 ### define the data for study sites 
 data <- data.frame(
   lat = c(36.053524, 36.10588, 36.200674),
-  lon = c(-112.138886, -112.094753,	-112.0532175)
- #  shape = c("triangle", "circle", "triangle"), 
- #  color = c("#68534D", "#D2D68D","#68534D")
+  lon = c(-112.138886, -112.094753,	-112.0532175),
+ shape = c("circle", "triangle", "circle"), 
+ color = c("#8D7068", "#10A870","#8D7068")
 )
 
 # Create a inset map with study points plot
-png(filename="figures/Figure1Aii.png", width = 4, height = 4, unit = 'in', res = 300)
 plot2 <- ggmap(map) + # background map
-  geom_sf(data = grand_canyon, color = "black", size = 0.5, alpha = 0.5) + # provides white overlay to mute background terrain
-  geom_sf(data = bat_bc, fill ="#10A870",color ="#10A870",  size = 0.7) +# bright angel trail
+  geom_sf(data = grand_canyon, color = "black", size = 0.5, alpha = 0.5, inherit.aes = FALSE) + # provides white overlay to mute background terrain
+  #scale_x_discrete(breaks=c(-112.16,-112.12,-112.08, -112.04), labels=c("-112.16°W","-112.12°W","-112.08°W", "-112.04°W")) +
+  geom_sf(data = bat_bc, fill ="#10A870",color ="#10A870",  size = 0.7, inherit.aes = FALSE) +# bright angel trail
   geom_point(data = data, aes(x = lon, y = lat, shape = shape, color = color), size = 4) +
-  scale_color_manual(values = c("#8D7068", "#10A870","#8D7068"), guide = "none") +
+  scale_color_manual(values = c( "#10A870","#8D7068","#8D7068"), guide = "none") +
   scale_shape_manual(labels = c("backcountry", "frontcountry"),
                      values = c("triangle" = 15, "circle" = 17), guide = "none") +
   labs(x = "Longitude",
        y = "Latitude", 
-      # shape = "Tourist Access"
-      ) +
+       # shape = "Tourist Access"
+  ) +
   theme_minimal()
+
+png(filename="figures/Figure1Aii.png", width = 4, height = 4, unit = 'in', res = 300)
+plot2
 dev.off()
 
-# save the figure 
-png(filename="figures/Figure1_SiteMap.png", width = 4, height = 3, unit = 'in', res = 300)
-ggdraw()+
-  draw_plot(plot1)+
-  draw_plot(plot2,height=0.6,x=0.1,y=0.3)
-dev.off()
+# save the figure combined
+# png(filename="figures/Figure1_SiteMap.png", width = 4, height = 3, unit = 'in', res = 300)
+# ggdraw()+
+#   draw_plot(plot1)+
+#   draw_plot(plot2,height=0.6,x=0.1,y=0.3)
+# dev.off()
+
