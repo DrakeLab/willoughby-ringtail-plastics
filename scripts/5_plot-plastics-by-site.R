@@ -23,7 +23,7 @@ plasticRFW_by_site <- ggplot(plastic_frags, aes(x =tourism_level , y = plasticRF
   geom_boxplot() + 
   geom_point(aes(shape = plastic_type, color = plastic_type), position = position_jitterdodge(0.5)) + 
   scale_shape_manual(name = "plastic polymer", 
-                     values = c(0,2,5), 
+                     values = c(15,17,18), 
                      labels = c("polyethylene", "polypropylene", "polystyrene")) + 
   scale_color_manual(name = "plastic polymer",
                      values = c("blue", "darkorange", "darkgrey"), 
