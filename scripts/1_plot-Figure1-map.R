@@ -56,7 +56,7 @@ bc_pc_plot <- ggplot(bc_piechart, aes(x="", y=scat_samples, fill=plastic_status)
         legend.position="none")  
 
 ## save the plot as png
-png(filename="figures/Figure1Aiii.png", width = 4, height = 4, unit = 'in', res = 300)
+png(filename="figures/fig1/Figure1Aiii.png", width = 4, height = 4, unit = 'in', res = 300)
 par(bg=NA)
 bc_pc_plot
 dev.off()
@@ -72,7 +72,7 @@ fc_pc_plot <- ggplot(fc_piechart, aes(x="", y=scat_samples, fill=plastic_status)
   theme(plot.title = element_text(hjust = 0.5, face="bold"), 
         legend.position="none")  
   
-png(filename="figures/Figure1Aiv.png", width = 4, height = 4, unit = 'in', res = 300)
+png(filename="figures/fig1/Figure1Aiv.png", width = 4, height = 4, unit = 'in', res = 300)
 par(bg=NA)
 fc_pc_plot
 dev.off()
@@ -105,7 +105,7 @@ plot1 <- ggplot() +
   geom_rect(aes(xmin = -112.0081, xmax = -112.2081, ymin = 36.02842, ymax = 36.22842), color = "black", fill = "black")  +
   theme_map() 
 ## plot and save the US map with Arizona highlighted
-png(filename="figures/Figure1Ai.png", width = 4, height =3, unit = 'in', res = 300)
+png(filename="figures/fig1/Figure1Ai.png", width = 4, height =3, unit = 'in', res = 300)
 plot1
 dev.off()
 

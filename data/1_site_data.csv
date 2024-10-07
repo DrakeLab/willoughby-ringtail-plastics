@@ -1,5 +1,5 @@
 unique_site,site_id,name,site_area,park_area,ringtail_scat,structured,vehicle_access,lat,long
-GC15H,GC15H,1.5 mile house on Bright Angel Trail,GCBAC,Inner Canyon,yes,no,no,,
+GC15H,GC15H,1.5 mile house on Bright Angel Trail,GCBAT,Inner Canyon,yes,no,no,,
 GCBAC,GCBAC,Bright Angel Campground,GCBAC,Inner Canyon,yes,no,no,,
 GCBAR,GCBAR,Bright Angel Hotel Roof,GCVillage,Rim,yes,yes,yes,,
 GCBB,GCBB,Boat Beach ,GCBAC,Inner Canyon,yes,no,no,,

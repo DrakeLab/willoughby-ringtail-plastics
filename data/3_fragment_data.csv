@@ -173,8 +173,8 @@ date_added,site_id,month_year,segment_id,fragment_id,fragment_type,fragment_desc
 4/19/23,GCJH,May2021,GCJH_S1_06May2021,GCJH_S1_06May2021_F1,Plant,plant_material,,0.087,n/a
 7/24/23,GCJH,May2021,GCJH_S2_06May2021,GCJH_S2_06May2021_F1,Anthropogenic,fibers,,0.028,n/a
 7/24/23,GCJH,May2021,GCJH_S2_06May2021,GCJH_S2_06May2021_F2,Plant,plant_material,,0.089,seeds
-7-13-2023,GCTL,Dec2021,GCTC_S1_06Dec2021,GCTC_S1_06Dec2021_F1,Plastic,plastic,Milky Way wrapper,0.023,milky_way_wrapper
-4-10-2023,GCTL,Dec2021,GCTC_S1_06Dec2021,GCTC_S1_06Dec2021_F2,Plant,plant_material,,0.096,n/a
+7-13-2023,GCTL,Dec2021,GCTL_S1_06Dec2021,GCTL_S1_06Dec2021_F1,Plastic,plastic,Milky Way wrapper,0.023,milky_way_wrapper
+4-10-2023,GCTL,Dec2021,GCTL_S1_06Dec2021,GCTL_S1_06Dec2021_F2,Plant,plant_material,,0.096,n/a
 7/24/23,GCTC,Sep2021,GCTC_S1_13Sep2021,GCTC_S1_13Sep2021_F1,Plant,plant_material,,2.861,seeds and casings
 4/26/23,GCTL,Dec2021,GCTL_S2_06Dec2021,GCTC_S2_06Dec2021_F1,Anthropogenic,paper,,0.216,straw wrapper?; reverted to TL based on data
 4/26/23,GCTL,Dec2021,GCTL_S2_06Dec2021,GCTC_S2_06Dec2021_F2,Plant,plant_material,,0.033,n/a
