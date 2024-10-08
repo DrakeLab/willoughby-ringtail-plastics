@@ -81,7 +81,7 @@ dev.off()
 
 ## get state and country map data from ggplot
 states <- map_data("state")
-world <- map_data("world")
+# world <- map_data("world")
 
 ## filter the state data for Arizona
 arizona <- subset(states, region == "arizona")
@@ -99,10 +99,10 @@ grand_canyon <- st_transform(grand_canyon, crs = st_crs("+proj=longlat +datum=WG
 
 ## create background admin plot object 
 plot1 <- ggplot() +
-  geom_polygon(data = us_contiguous , aes(x = long, y = lat, group = group), fill = "white", color = "black", size = 0.5) +
-  geom_polygon(data = arizona, aes(x = long, y = lat, group = group), fill = "darkgrey", color = NA, size = 0.5) +
-  geom_polygon(data=GRCA, aes(x = long, y = lat, group = group), fill ="lightgrey", size = 0.7) +
-  geom_rect(aes(xmin = -112.0081, xmax = -112.2081, ymin = 36.02842, ymax = 36.22842), color = "black", fill = "black")  +
+  # geom_polygon(data = us_contiguous , aes(x = long, y = lat, group = group), fill = "white", color = "black", size = 0.5) +
+  geom_polygon(data = arizona, aes(x = long, y = lat, group = group), fill = "grey80", color = "black", size = 0.5) +
+  geom_polygon(data=GRCA, aes(x = long, y = lat, group = group), fill ="black", size = 0.7) +
+  geom_rect(aes(xmin = -112.0081, xmax = -112.2081, ymin = 36.02842, ymax = 36.22842), color = "white", fill = "red")  +
   theme_map() 
 ## plot and save the US map with Arizona highlighted
 png(filename="figures/fig1/Figure1Ai.png", width = 4, height =3, unit = 'in', res = 300)
