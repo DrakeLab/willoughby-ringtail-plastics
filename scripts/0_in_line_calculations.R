@@ -39,21 +39,46 @@ print(round(n_distinct(paper_frags$segment_id)/nrow(rscat)*100),2) # ABSTRACT
 
 # count the scats with plastics as percent 
 plastic_frags <-  filter(frag_type_anthro, fragment_description == "plastic")
+print(nrow(plastic_frags)) # ABSTRACT
 # frequency 
 print(n_distinct(plastic_frags$segment_id)) # ABSTRACT
 # percent 
 print(round(n_distinct(plastic_frags$segment_id)/nrow(rscat)*100),2) # ABSTRACT
 
+### METHODS ###
+
 ### RESULTS ###
 
-# break down of unique scat samples by site 
+# break down of unique scat samples by tourism level
 table(rscat$tourism_level) # RESULTS P1 
+# break down of unique scat samples by site 
+table(rscat$site_area) # RESULTS P1 
+# break down of unique scat samples by season 
 table(rscat$month) # RESULTS P1
 
-# break down of unique scat samples by season 
-table(rscat$site_area) # RESULTS P1
-
 # calculate scat morphometrics by tourism type 
+
+## separate out the groups 
+bc_scat <- rscat %>% 
+  dplyr::filter(tourism_level == "backcountry")
+fc_scat <- rscat %>% 
+  dplyr::filter(tourism_level == "frontcountry")
+
+## Each group is >30, but we will still do a visual inspection for normality 
+## test  each group diameter 
+car::qqPlot(as.numeric(bc_scat$diameter_mm)) # some outliers but ok
+car::qqPlot(as.numeric(fc_scat$diameter_mm))
+
+## test normality of each group wet weight
+car::qqPlot(as.numeric(bc_scat$wetweight_grams)) # some outliers but ok
+car::qqPlot(as.numeric(fc_scat$wetweight_grams))
+
+# T Test to compare groups 
+## diameter
+t.test(as.numeric(diameter_mm) ~ tourism_level, data = rscat)
+## wet weight 
+t.test(as.numeric(wetweight_grams) ~ tourism_level, data = rscat)
+
 scat_by_site <- rscat %>% 
   group_by(vehicle_access) %>% 
   summarise(n_scat = n(),

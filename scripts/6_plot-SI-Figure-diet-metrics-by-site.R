@@ -6,9 +6,12 @@ library(tidyverse)
 # load data 
 site <- read.csv("data/1_site_data.csv", strip.white = T)
 scat <- read.csv("data/2_scat_data.csv", strip.white = T)
+# remove scats not confirmed as ringtail 
+scat <- scat %>% 
+  dplyr::filter(ringtail_confirmed == "yes")
 frags <- read.csv("data/3_fragment_data.csv", strip.white = T)
 
-# merge scat and site data 
+# merge scat and site data
 scat <- left_join(scat, site, by = "site_id")
 n_scat <- nrow(scat)
 
@@ -31,12 +34,12 @@ print(F_frags[c(2,3,5,1,4), c(1,2,5:7)])
 
 # calculate frequency of occurrence by site
 site_F <- scat %>% 
-  group_by(vehicle_access) %>% 
-  summarise(n_plastic = sum(plastic_presence =="yes"), 
-            n_anthropogenic = sum(anthropogenic_presence == "yes"),
-            n_invertebrate = sum(invertebrate_presence == "yes"),
-            n_vertebrate = sum(vertebrate_presence == "yes"),
-            n_plant = sum(plant_presence== "yes"))
+  group_by(tourism_level) %>% 
+  summarise(n_plastic = sum(plastic == 1), 
+            n_anthropogenic = sum(anthropogenic == 1),
+            n_invertebrate = sum(invertebrate == 1),
+            n_vertebrate = sum(vertebrate == 1),
+            n_plant = sum(plant == 1))
 
 site_F_long <- site_F %>% 
   pivot_longer(
@@ -46,18 +49,17 @@ site_F_long <- site_F %>%
     values_drop_na = TRUE
   )
 
-site_F_long$site_type = ifelse(site_F_long$vehicle_access == "no", "wilderness (n = 45)","vehicle-access (n = 38)")
-site_F_long$FO <- ifelse(site_F_long$vehicle_access == "no", round(site_F_long$frequency/45*100,2),round(site_F_long$frequency/38*100,2))
+site_F_long$site_type = ifelse(site_F_long$tourism_level == "backcountry", "backcountry (n = 43)","frontcountry(n = 40)")
+site_F_long$FO <- ifelse(site_F_long$tourism_level == "backcountry", round(site_F_long$frequency/43*100,2),round(site_F_long$frequency/40*100,2))
 
 site_by_diet_plot <- ggplot(site_F_long, aes(x = reorder(diet_category, -FO), y = FO, fill = diet_category)) + 
   geom_bar(stat="identity") + 
   facet_grid(~site_type) + 
   labs(x = "diet category", y = "Frequency of Occurrence (%)") + 
   scale_y_continuous(limits = c(0,100)) + 
-  theme_classic() + 
+  theme_classic() 
   # annotate("text", )
 site_by_diet_plot 
-
 
 
 ## make a stacked bar plot of % relative frequency of occurrence by site
@@ -131,7 +133,7 @@ site_by_metric <- ggplot(site_diet_metrics , aes(x = vehicle_access, y = value, 
   theme_classic() +
   scale_x_discrete(name ="", 
                    limits=c("yes", "no"), 
-                   labels=c("Vehicle Access", "Wilderness")) + 
+                   labels=c("frontcountry", "backcountry")) + 
   labs(y = "Proportion of scat segments (n = 83)")
 
 # side by side version 
@@ -142,22 +144,22 @@ site_by_pctFO <- ggplot(subset(site_diet_metrics, metric=="pct_frequency_occurre
   theme(legend.position="none") + 
   labs(title="Frequency of Occurrence (%)", y = "Scat (n = 83)") + 
   scale_x_discrete(name ="", limits=c("yes", "no"), 
-                   labels=c("Vehicle Access", "Wilderness")) 
+                   labels=c("frontcountry", "backcountry")) 
 site_by_pctFR <- ggplot(subset(site_diet_metrics,metric=="pct_relative_frequency"), aes(x = vehicle_access, y = value, fill = diet_category)) + 
    geom_bar(position="stack", stat="identity") + 
   theme_classic() + 
   theme(legend.position="none")  + 
   labs(title="Relative Frequency of Occurrence (%)", y = "Percent of Diet items (n = 205)") + 
   scale_x_discrete(name ="", limits=c("yes", "no"), 
-                   labels=c("Vehicle Access", "Wilderness")) 
+                   labels=c("frontcountry", "backcountry")) 
 site_by_pctW <- ggplot(subset(site_diet_metrics,metric=="pct_weight"), aes(x = vehicle_access, y = value, fill = diet_category)) + 
   geom_bar(position="stack", stat="identity") + 
   theme_classic()  + 
-  labs(title="Weight (%)", y = "Diet Items (n = 22.009 grams)") + 
+  labs(title="Relative Weight (%)", y = "Diet Items (n = 22.009 grams)") + 
   scale_x_discrete(name ="", limits=c("yes", "no"), 
-                   labels=c("Vehicle Access", "Wilderness")) 
+                   labels=c("frontcountry", "backcountry")) 
 # make the plot 
 
-png(filename="figures/Figure1.png", width = 6.5, height = 4, units = 'in', res = 300)
+png(filename="figures/supp/FigureS2.png", width = 16, height = 6, units = 'in', res = 300)
 grid.arrange(site_by_pctFO, site_by_pctFR, site_by_pctW, nrow = 1)
 dev.off()

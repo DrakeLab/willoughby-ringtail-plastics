@@ -215,27 +215,30 @@ bootstrap_merge$FO_percent <- round(bootstrap_merge$bootstrap*100,2)
 bootstrap_merge$diet_category <- factor(bootstrap_merge$diet_category, levels= c("plant","vertebrate","anthropogenic","invertebrate", "plastic") )
 
 # Plot the density of bootstrap replicates 
-png(filename="figures/Figure2OptA.png", width = 8, height = 6, unit = 'in', res = 300)
-diet_category_density_plot <- ggplot(bootstrap_merge, aes(x = FO_percent, fill = site_type)) + 
-  geom_density(bw="bcv", alpha = 0.4) + 
-  facet_wrap(~ diet_category,  ncol=1) +
-  geom_vline(data = diet_cat_report, aes(xintercept=round(est*100, 2)), color="black", linetype="dashed", size=0.8) + 
-  theme_classic() + 
-  scale_fill_manual(values=c("#47434C", "#A9C5A0")) +
-  #scale_y_continuous(breaks=seq(0,0.,by=0.05)) + 
-  theme(legend.position="none") +
-  labs(x = "Frequency of Occurence (%)", y = "Proportion of bootstrap replicates (n = 1,000)")
-diet_category_density_plot
-dev.off()
+# png(filename="figures/Figure2OptA.png", width = 8, height = 6, unit = 'in', res = 300)
+# diet_category_density_plot <- ggplot(bootstrap_merge, aes(x = FO_percent, fill = site_type)) + 
+#  geom_density(bw="bcv", alpha = 0.4) + 
+#  facet_wrap(~ diet_category,  ncol=1) +
+#  geom_vline(data = diet_cat_report, aes(xintercept=round(est*100, 2)), color="black", linetype="dashed", size=0.8) + 
+#  theme_classic() + 
+#  scale_fill_manual(values=c("#47434C", "#A9C5A0")) +
+#  #scale_y_continuous(breaks=seq(0,0.,by=0.05)) + 
+#  theme(legend.position="none") +
+#  labs(x = "Frequency of Occurence (%)", y = "Proportion of bootstrap replicates (n = 1,000)")
+# diet_category_density_plot
+# dev.off()
 
 # Plot bar graph of bootstrap mean with standard deviation intervals from bootstrap process 
-png(filename="figures/Figure2OptB.png", width = 8, height = 4, unit = 'in', res = 300)
 diet_cat_bp <- ggplot(diet_cat_report, aes(x = diet_category, y = round(est*100,2), fill = site_type)) + 
   geom_bar(stat = "identity", position =position_dodge(), width = 0.8) + 
   geom_errorbar(aes(ymax = round((est + std_dev)*100,2), ymin = round((est-std_dev)*100,2)), position = position_dodge(0.8), width = 0.2) + 
   scale_fill_manual(values=c("#ADA9B2", "#A9C5A0")) + 
   labs(y = "Frequency of Occurence (%)", x = "Diet Category") + 
   theme_classic() +
-  theme(legend.position="none") 
+  theme(legend.position="none") + 
+  ylim(0,100)
+
+# save the plot
+png(filename="figures/Figure2.png", width = 6, height = 4, unit = 'in', res = 300)
 diet_cat_bp 
 dev.off()
