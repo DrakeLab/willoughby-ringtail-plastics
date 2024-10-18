@@ -1,6 +1,6 @@
 date_added,site_id,month_year,segment_id,fragment_id,fragment_type,fragment_description,visual_id,fragment_weight,notes
-4/26/23,GC15H,Dec2021,GC15H_S1_04Dec2021,GC15H_S1_04Dec2021_F1,Vertebrate,hair,,0.63,fur
-4/26/23,GC15H,Dec2021,GC15H_S1_04Dec2021,GC15H_S1_04Dec2021_F2,Plant,plant_material,,1.534,seeds and other fragments
+4/26/23,GC15H,Dec2021,GC15H_S1_04Dec2021B,GC15H_S1_04Dec2021_F1,Vertebrate,hair,,0.63,fur
+4/26/23,GC15H,Dec2021,GC15H_S1_04Dec2021B,GC15H_S1_04Dec2021_F2,Plant,plant_material,,1.534,seeds and other fragments
 4/19/23,GC15H,Jul2021,GC15H_S1_25Jul2021,GC15H_S1_25Jul2021_F1,Plant,plant_material,,0.002,n/a
 4/26/23,GC15H,Dec2021,GC15H_S2_04Dec2021,GC15H_S2_04Dec2021_F1,Plant,plant_material,,0.711,possible petals
 4/26/23,GC15H,Jul2021,GC15H_S2_25Jul2021,GC15H_S2_25Jul2021_F1,Plant,plant_material,,0.172,seed
@@ -59,7 +59,7 @@ date_added,site_id,month_year,segment_id,fragment_id,fragment_type,fragment_desc
 4/26/23,GCBH,Jun2021,GCBH_S2_05Jun2021,GCBH_S2_05Jun2021_F2,Vertebrate,hair and bones,,0.146,fur and bone fragments
 7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.105,food_wrapper
 7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F2,Plant,plant_material,,0.091,plant_pieces
-7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F3,Organic,rocks,,0.573,many_small_rocks
+7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F3,Inorganic,rocks,,0.573,many_small_rocks
 7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F4,Anthropogenic,paper,,0.022,paper
 10/16/24,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F5,Vertebrate,feathers,,0.029,feathers
 4/19/23,GCBH,Jun2021,GCBH_S3_05Jun2021,GCBH_S3_05Jun2021_F1,Vertebrate,bones and hair,,0.465,fur
