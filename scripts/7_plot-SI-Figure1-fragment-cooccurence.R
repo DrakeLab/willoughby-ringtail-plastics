@@ -1,4 +1,4 @@
-# create network of fragment co-occurrence 
+# create data visualization for fragment co-occurrence 
 
 # setup library 
 library(circlize) # tranforming lists and matrices

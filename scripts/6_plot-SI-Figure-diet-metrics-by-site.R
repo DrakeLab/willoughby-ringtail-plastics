@@ -158,8 +158,7 @@ site_by_pctW <- ggplot(subset(site_diet_metrics,metric=="pct_weight"), aes(x = v
   labs(title="Relative Weight (%)", y = "Diet Items (n = 22.009 grams)") + 
   scale_x_discrete(name ="", limits=c("yes", "no"), 
                    labels=c("frontcountry", "backcountry")) 
-# make the plot 
-
+# make the summary plot 
 png(filename="figures/supp/FigureS2.png", width = 16, height = 6, units = 'in', res = 300)
 grid.arrange(site_by_pctFO, site_by_pctFR, site_by_pctW, nrow = 1)
 dev.off()

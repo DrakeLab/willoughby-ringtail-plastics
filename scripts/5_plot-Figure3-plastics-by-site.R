@@ -1,4 +1,4 @@
-# plot morphometrics by site
+# plot plastic RFW by site
 
 # load data 
 site <- read.csv("data/1_site_data.csv", strip.white = T)
@@ -20,6 +20,9 @@ plastic_frags <- left_join(plastic_frags, plastic_type, by= "fragment_id")
 plastic_frags$plasticRFW <- plastic_frags$fragment_weight / as.numeric(plastic_frags$dryweight_grams)
 plastic_frags$pct_plasticRFW <- round(plastic_frags$plasticRFW *100,2)
 
+# calculate relative frequency by weight of plastics 
+
+# plot Figure 3 plastic type RFW by site 
 plasticRFW_by_site <- ggplot(plastic_frags, aes(x =tourism_level , y =pct_plasticRFW)) + 
   geom_boxplot() + 
   geom_point(aes(shape = plastic_type, color = plastic_type), position = position_jitterdodge(0.5)) + 

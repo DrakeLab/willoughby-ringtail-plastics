@@ -60,7 +60,7 @@ names(plant_data)[names(plant_data) == 'scats'] <- 'scat_no_plant'
 plant_data <- plant_data %>% 
   remove_rownames %>% 
   column_to_rownames(var="tourism_level")
-print(chisq.test(plant_data))
+print(chisq.test(plant_data, correct = FALSE))
 
 # compare vertebrates between site types
 vert_data <- rscat %>% 
@@ -72,7 +72,7 @@ names(vert_data)[names(vert_data) == 'scats'] <- 'scat_no_vert'
 vert_data <- vert_data %>% 
   remove_rownames %>% 
   column_to_rownames(var="tourism_level")
-print(chisq.test(vert_data))
+print(chisq.test(vert_data, correct = FALSE))
 
 # compare invertebrates between site types
 invert_data <- rscat %>% 
@@ -84,7 +84,7 @@ names(invert_data)[names(invert_data) == 'scats'] <- 'scat_no_invert'
 invert_data <- invert_data %>% 
   remove_rownames %>% 
   column_to_rownames(var="tourism_level")
-print(chisq.test(invert_data))
+print(chisq.test(invert_data, correct = FALSE))
 
 # compare plastic between site types
 plastic_data <- rscat %>% 
@@ -108,4 +108,4 @@ names(anthro_data)[names(anthro_data) == 'scats'] <- 'scat_no_anthro'
 anthro_data <- anthro_data %>% 
   remove_rownames %>% 
   column_to_rownames(var="tourism_level")
-print(chisq.test(anthro_data))
+print(chisq.test(anthro_data, correct = FALSE))
