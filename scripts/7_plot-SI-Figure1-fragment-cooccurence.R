@@ -156,3 +156,29 @@ dev.off()
 #             vertex.label.color="black",
 #             vertex.color = NA, 
 #             layout=layout_nicely)
+
+
+# Test for co-occurence with vertebrates 
+# filter to plastic scat 
+pv_compare <- rscat %>% 
+  group_by(plastic) %>% 
+  summarise(scat_w_vert = sum(as.numeric(vertebrate)), 
+            scats = n())
+pv_compare$scats <- pv_compare$scats - pv_compare$scat_w_vert
+names(pv_compare)[names(pv_compare) == 'scats'] <- 'scat_no_vert'
+pv_compare <- pv_compare %>% 
+  remove_rownames %>% 
+  column_to_rownames(var="plastic")
+print(chisq.test(pv_compare, correct = FALSE))
+
+# Test for co-occurence with anthropogenic content
+pa_compare <- rscat %>% 
+  group_by(plastic) %>% 
+  summarise(scat_w_anthro = sum(as.numeric(anthropogenic)), 
+            scats = n())
+pa_compare$scats <- pa_compare$scats - pa_compare$scat_w_anthro
+names(pa_compare)[names(pa_compare) == 'scats'] <- 'scat_no_anthro'
+pa_compare <- pa_compare %>% 
+  remove_rownames %>% 
+  column_to_rownames(var="plastic")
+print(chisq.test(pa_compare,correct = FALSE))

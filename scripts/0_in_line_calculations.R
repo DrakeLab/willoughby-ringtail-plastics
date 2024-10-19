@@ -8,7 +8,8 @@ site <- read.csv(file = "data/1_site_data.csv")
 scat <- read.csv(file = "data/2_scat_data.csv")
 scat <- left_join(scat, site, by = "site_id") # link scat and collection site data 
 frags <- read.csv("data/3_fragment_data.csv", strip.white = T)
-# plastic <- read.csv("data/4_plastic_data.csv", strip.white = T)
+plastic <- read.csv("data/4_plastic_data.csv", strip.white = T)
+plastic_type <- dplyr::select(plastic, fragment_id, plastic_type)
 
 # filter to only ringtail scats
 rscat <- scat %>% 
@@ -46,8 +47,11 @@ print(n_distinct(plastic_frags$segment_id)) # ABSTRACT
 print(round(n_distinct(plastic_frags$segment_id)/nrow(rscat)*100),2) # ABSTRACT
 
 ### METHODS ###
+nrow(scat) # number of collected scats 
 
 ### RESULTS ###
+
+nrow(rscat) # count of ringtail scats 
 
 # break down of unique scat samples by tourism level
 table(rscat$tourism_level) # RESULTS P1 
@@ -56,8 +60,7 @@ table(rscat$site_area) # RESULTS P1
 # break down of unique scat samples by season 
 table(rscat$month) # RESULTS P1
 
-# calculate scat morphometrics by tourism type 
-
+# Scat morphometrics by tourism type 
 ## separate out the groups 
 bc_scat <- rscat %>% 
   dplyr::filter(tourism_level == "backcountry")
@@ -73,12 +76,13 @@ car::qqPlot(as.numeric(fc_scat$diameter_mm))
 car::qqPlot(as.numeric(bc_scat$wetweight_grams)) # some outliers but ok
 car::qqPlot(as.numeric(fc_scat$wetweight_grams))
 
-# T Test to compare groups 
-## diameter
+## T Test to compare groups 
+### diameter
 t.test(as.numeric(diameter_mm) ~ tourism_level, data = rscat)
-## wet weight 
+### wet weight 
 t.test(as.numeric(wetweight_grams) ~ tourism_level, data = rscat)
 
+## Mean and SD for Table S2
 scat_by_site <- rscat %>% 
   group_by(vehicle_access) %>% 
   summarise(n_scat = n(),
@@ -90,21 +94,16 @@ scat_by_site <- rscat %>%
 scat_fc <- scat_by_site[2,2] ## frontcountry scats 
 scat_bc <- scat_by_site[1,2] ## backcountry scats 
 
-# morphometric differences by site 
 ## weights by site type 
-## frontcountry scats 
+### frontcountry scats 
 wght_mean_fc <- scat_by_site[2,3] 
 wght_sd_fc <- scat_by_site[2,4] 
 paste(round(wght_mean_fc,2), "+/-", round(wght_sd_fc,2)) # SUP TABLE 1 
 
-## backcountry scats 
+### backcountry scats 
 wght_mean_bc <- scat_by_site[1,3] 
 wght_sd_bc <- scat_by_site[1,4] 
 paste(round(wght_mean_bc,2), "+/-", round(wght_sd_bc,2)) # SUP TABLE 1 
-
-# perform statistics for Supplement 
-## mann whitney U test between site types 
-wilcox.test(wetweight_grams ~ tourism_level, data=rscat) # SUP TABLE 1 
 
 ## diameter by site type
 ### frontcountry sites
@@ -117,10 +116,37 @@ diam_mean_bc <- scat_by_site[1,5]
 diam_sd_bc <- scat_by_site[1,6] 
 paste(round(diam_mean_bc,2), "+/-", round(diam_sd_bc,2)) # SUP TABLE 1 
 
-## mann whitney U test between site types 
-wilcox.test(as.numeric(diameter_mm) ~ vehicle_access, data=rscat) # SUP TABLE 1 
+# Unique diet items 
+nrow(frags) 
+# calculate percent FO for each diet item
+diet_cats <- frags %>% 
+  group_by(fragment_type) %>% 
+  summarise(n_scat = n_distinct(segment_id))
+diet_cats$percentFO <- round(diet_cats$n_scat / 83*100,1)
 
-# prepare scat morphometrics by anthropogenic content
+# calculate percent FO for human-derived items 
+hd_refuse <- rscat %>% dplyr::filter(human_derived > 0)
+nrow(hd_refuse) # count of scat with anthro 
+round(nrow(hd_refuse) / 83*100,1)# percent FO
+
+# count scat segments with two or more diet items 
+rscat$diet_richness <- as.numeric(rscat$plastic) + 
+  as.numeric(rscat$anthropogenic) + 
+  as.numeric(rscat$invertebrate) +
+  as.numeric(rscat$vertebrate) + 
+  as.numeric(rscat$plant) + 
+  as.numeric(rscat$inorganic)
+round((nrow(rscat) - nrow(rscat[rscat$diet_richness == 1,]))/nrow(rscat)*100,1) # percent with >1 
+nrow(rscat[rscat$diet_richness == 1,]) # count of just one type
+
+# what are the contents of the solo scats? 
+solos <- frags %>% 
+  dplyr::filter(frags$segment_id %in% rscat[rscat$diet_richness == 1,]$segment_id)
+table(solos$fragment_type)
+
+# make a matrix for fragment co-occurrence 
+## RESULTS 
+# Scat morphometrics by anthropogenic content
 rscat_by_anthropogenic <- rscat %>% 
   group_by(any_anthro) %>% 
   summarise(n_scat = n(),
@@ -129,12 +155,10 @@ rscat_by_anthropogenic <- rscat %>%
             diameter_mean = mean(as.numeric(diameter_mm)), 
             diameter_sd = sd(as.numeric(diameter_mm)))
 
-## mann whitney U test of diameter by anthropogenic content
-wilcox.test(as.numeric(diameter_mm) ~ any_anthro, data=rscat) # SUP TABLE 1 
+## sample size large enough for t test to test diameter
 t.test(as.numeric(diameter_mm)~any_anthro, data=rscat)
 
-## of weight 
-wilcox.test(as.numeric(wetweight_grams) ~ any_anthro, data=rscat) # SUP TABLE 1 
+## sample size large enough for t test to test weight
 t.test(as.numeric(wetweight_grams)~any_anthro, data=rscat)
 
 ## diameter by contamination
@@ -192,7 +216,7 @@ wght_mean_Nplastic <- scat_by_plasticYN[1,3]
 wght_sd_Nplastic <- scat_by_plasticYN[1,4] 
 paste(round(wght_mean_Nplastic,2), "+/-", round(wght_sd_Nplastic ,2))
 
-## WEIGHT mann whitney U test between plastic content
+## WEIGHT mann whitney U test between plastic content and weight
 wilcox.test(wetweight_grams ~ plastic, data=rscat) 
 
 ## diameter by plastic content
@@ -206,7 +230,7 @@ diam_mean_Nplastic <- scat_by_plasticYN[1,5]
 diam_sd_Nplastic <- scat_by_plasticYN[1,6] 
 paste(round(diam_mean_Nplastic,2), "+/-", round(diam_sd_Nplastic,2))
 
-## mann whitney U test between plastic contamination
+## mann whitney U test between plastic contamination and diameter
 wilcox.test(as.numeric(diameter_mm) ~ plastic, data=rscat)
 
 scat_summary <- scat %>% group_by(site_area, month) %>% 
@@ -216,32 +240,24 @@ scat_summary <- scat_summary %>%
 View(scat_summary)
 
 ## RFW for plastic content
-
-# load data 
-site <- read.csv("data/1_site_data.csv", strip.white = T)
-scat <- read.csv("data/2_scat_data.csv", strip.white = T)
-frags <- read.csv("data/3_fragment_data.csv", strip.white = T)
-plastic <- read.csv("data/4_plastic_data.csv", strip.white = T)
-plastic_type <- dplyr::select(plastic, fragment_id, plastic_type)
-
 # filter to only plastics
 plastic_frags <- frags %>%
   dplyr::filter(fragment_type == "Plastic")
 
 # merge dataframes
 plastic_frags <- left_join(plastic_frags, scat, by= c("site_id", "segment_id"))
-plastic_frags <- left_join(plastic_frags, site, by= "site_id")
 plastic_frags <- left_join(plastic_frags, plastic_type, by= "fragment_id") 
 
 # calculate % relative frequency by weight of plastics 
-plastic_frags$plasticRFW <- round((plastic_frags$fragment_weight / plastic_frags$dryweight_grams)*100, 2)
-wilcox.test(plasticRFW  ~ vehicle_access, data=plastic_frags)
+plastic_frags$plasticRFW <- round((plastic_frags$fragment_weight / as.numeric(plastic_frags$dryweight_grams))*100, 2)
+wilcox.test(plasticRFW  ~ tourism_level, data=plastic_frags)
 
 plastic_frags_sitetype <- plastic_frags %>%
-  group_by(vehicle_access) %>%
+  group_by(tourism_level) %>%
   summarise(n_fragments = n(), 
             RFW_mean = mean(plasticRFW),
             RFW_sd = sd(plasticRFW))
+plastic_frags_sitetype
 
 # frequency of plastic types by site type 
 
