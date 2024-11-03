@@ -1,4 +1,4 @@
-Plastic ingestion by an Omnivorous Mammal, the Ringtail (*Bassariscus astutus*), in a National Park
+Data from: Plastic ingestion by an omnivorous mammal, the Ringtail (*Bassariscus astutus*), in Grand Canyon National Park
 
 Authors: 
 - Logan Owens
