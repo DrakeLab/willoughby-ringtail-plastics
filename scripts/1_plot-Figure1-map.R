@@ -15,13 +15,10 @@ library(cowplot) # plotting inset
 
 # make pie charts for Figure 1A inset 
 ## read in data
-site <- read.csv("data/1_site_data.csv", strip.white = T)
+site <- read.csv("data/0_site_data.csv", strip.white = T)
 scat <- read.csv(file = "data/2_scat_data.csv") # scat segment data
 scat <- left_join(scat, site, by = "site_id")
 
-## remove scats not confirmed as ringtail 
-scat <- scat %>% 
-  dplyr::filter(ringtail_confirmed == "yes")
 
 ## group by site type 
 plastic_site <- scat %>% 
@@ -36,7 +33,7 @@ plastic_site <- plastic_site %>%
                values_to = "scat_samples")
 
 ## rename for legend 
-plastic_site$plastic_status <- str_sub(plastic_site$plastic_status,9,16)
+plastic_site$plastic_status <- str_sub(plastic_site$plastic_status,,16)
 
 # filter for separate plots 
 bc_piechart <- plastic_site %>% dplyr::filter(tourism_level == "backcountry")
@@ -49,7 +46,7 @@ bc_pc_plot <- ggplot(bc_piechart, aes(x="", y=scat_samples, fill=plastic_status)
   geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0) +
   geom_text(aes(y = scat_samples/2 +  0.3+  c(0, cumsum(scat_samples)[-length(scat_samples)]), label = percent), size=8) + 
-  scale_fill_manual(values=c("#10A870", "#F5A6E6")) +
+  scale_fill_manual(values=c("white", "gray30")) +
   labs(title="backcountry") + 
   theme_void() +  # remove background, grid, numeric labels
   theme(plot.title = element_text(hjust = 0.5, face="bold"), 
@@ -66,7 +63,7 @@ fc_pc_plot <- ggplot(fc_piechart, aes(x="", y=scat_samples, fill=plastic_status)
   geom_bar(stat="identity", width=1) +
   geom_text(aes(y = scat_samples/2 + 0.3 + c(0, cumsum(scat_samples)[-length(scat_samples)]), label = percent), size=8) + 
   coord_polar("y", start=0) +
-  scale_fill_manual(values=c("#8D7068", "#F5A6E6")) + 
+  scale_fill_manual(values=c("white", "#DF2626")) + 
   labs(title="frontcountry") + 
   theme_void() + # remove background, grid, numeric labels
   theme(plot.title = element_text(hjust = 0.5, face="bold"), 
@@ -86,9 +83,24 @@ states <- map_data("state")
 ## filter the state data for Arizona
 arizona <- subset(states, region == "arizona")
 
-## filter the world data for the contigous US
+## filter the world data for the contiguous US
 us <- subset(world, region == "USA")
 us_contiguous <- subset(us, subregion %notin% c("Alaska", "Hawaii")) 
+
+az_state_plot <- ggplot() +
+  geom_polygon(data = us_contiguous, aes(x = long, y = lat, group = group),
+               fill = "gray90", color = "white") +
+  geom_polygon(data = arizona, aes(x = long, y = lat, group = group),
+               fill = "black", color = "black") +
+  coord_fixed(1.3) +
+  theme_map() +
+  theme(plot.title = element_text(hjust = 0.5, size = 14))
+
+## plot and save the US map with Arizona highlighted
+png(filename="figures/fig1/Figure1_state.png", width = 4, height =3, unit = 'in', res = 300)
+az_state_plot 
+dev.off()
+
 
 ## load the shapefile for Grand Canyon National Park
 grand_canyon <- st_read("data/grca_tracts/GRCA_boundary.shp")
@@ -141,16 +153,16 @@ data <- data.frame(
   lat = c(36.053524, 36.10588, 36.200674),
   lon = c(-112.138886, -112.094753,	-112.0532175),
  shape = c("circle", "triangle", "circle"), 
- color = c("#8D7068", "#10A870","#8D7068")
+ color = c("gray30", "#DF2626","gray30")
 )
 
 # Create a inset map with study points plot
 plot2 <- ggmap(map) + # background map
   geom_sf(data = grand_canyon, color = "black", size = 0.5, alpha = 0.5, inherit.aes = FALSE) + # provides white overlay to mute background terrain
   #scale_x_discrete(breaks=c(-112.16,-112.12,-112.08, -112.04), labels=c("-112.16°W","-112.12°W","-112.08°W", "-112.04°W")) +
-  geom_sf(data = bat_bc, fill ="#10A870",color ="#10A870",  size = 0.7, inherit.aes = FALSE) +# bright angel trail
+  geom_sf(data = bat_bc, fill ="#DF2626",color ="gray30",  size = 0.7, inherit.aes = FALSE) +# bright angel trail
   geom_point(data = data, aes(x = lon, y = lat, shape = shape, color = color), size = 4) +
-  scale_color_manual(values = c( "#10A870","#8D7068","#8D7068"), guide = "none") +
+  scale_color_manual(values = c( "gray30","#DF2626","#DF2626"), guide = "none") +
   scale_shape_manual(labels = c("backcountry", "frontcountry"),
                      values = c("triangle" = 15, "circle" = 17), guide = "none") +
   labs(x = "Longitude",
@@ -169,4 +181,49 @@ dev.off()
 #   draw_plot(plot1)+
 #   draw_plot(plot2,height=0.6,x=0.1,y=0.3)
 # dev.off()
+
+## Plot scat depositor identity 
+
+scat <- read.csv(file = "data/2_scat_data.csv")
+scat_identity <- scat %>% 
+  group_by(tourism_level, scat_identity, plastic) %>% 
+  summarise(n_scat = n())
+scat_identity$scat_identity <- factor(scat_identity$scat_identity,
+                           levels = c("other mesocarnivore", "carnivore", "ringtail"))
+
+depositor_plot <- ggplot(scat_identity, aes(x = tourism_level, y = n_scat, fill = scat_identity)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = n_scat), 
+            position = position_stack(vjust = 0.5),
+            color = "white", size = 6) +
+  scale_fill_manual(
+    values = c(
+      "ringtail" = "black",
+      "carnivore" = "gray40",
+      "other mesocarnivore" = "gray80"
+    )
+  ) +
+  labs(
+    x = "Tourism access",
+    y = "Number of scats",
+    fill = "Scat identity"
+  ) +
+  facet_wrap(~ plastic) +
+  theme_classic()
+
+depositor_plot
+
+# make a side bar plot of scat identity and site identity 
+site_traits <- read.csv(file = "data/1_site_traits.csv")
+
+site_traits_sum <- site_traits %>% 
+  group_by(vehicle_access, carnivore_richness, n_scat) %>% 
+  summarise(n_sites = n())
+
+ggplot(site_traits_sum, aes(x = carnivore_richness, y = n_scat, color = vehicle_access)) +
+  geom_point(size = site_traits_sum$n_sites*4) +
+  scale_color_manual(values = c("yes" = "#DF2626", 
+                     "no" = "gray30")) + 
+  labs(x = "carnivore richness", y = "scat collected") +
+  theme_classic()
 
