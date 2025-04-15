@@ -1,207 +1,220 @@
-date_added,site_id,month_year,segment_id,fragment_id,fragment_type,fragment_description,visual_id,fragment_weight,notes
-4/26/23,GC15H,Dec2021,GC15H_S1_04Dec2021B,GC15H_S1_04Dec2021_F1,Vertebrate,hair,,0.63,fur
-4/26/23,GC15H,Dec2021,GC15H_S1_04Dec2021B,GC15H_S1_04Dec2021_F2,Plant,plant_material,,1.534,seeds and other fragments
-4/19/23,GC15H,Jul2021,GC15H_S1_25Jul2021,GC15H_S1_25Jul2021_F1,Plant,plant_material,,0.002,n/a
-4/26/23,GC15H,Dec2021,GC15H_S2_04Dec2021,GC15H_S2_04Dec2021_F1,Plant,plant_material,,0.711,possible petals
-4/26/23,GC15H,Jul2021,GC15H_S2_25Jul2021,GC15H_S2_25Jul2021_F1,Plant,plant_material,,0.172,seed
-4/26/23,GC15H,Jul2021,GC15H_S2_25Jul2021,GC15H_S2_25Jul2021_F2,Vertebrate,hair,,0.001,fur
-4/19/23,GC15H,Dec2021,GC15H_S3_04Dec2021,GC15H_S3_04Dec2021_F1,Plant,plant_material,,0.052,n/a
-4/19/23,GC15H,Dec2021,GC15H_S3_04Dec2021,GC15H_S3_04Dec2021_F2,Vertebrate,hair,,0.255,fur
-4/26/23,GC15H,Jul2021,GC15H_S3_25Jul2021,GC15H_S3_25Jul2021_F1,Plant,plant_material,,0.348,seeds and casings
-4/26/23,GCBAC,Jun2021,GCBAC_S1_08Jun2021,GCBAC_S1_08Jun2021_F1,Plant,plant_material,,2.21,seeds and casings
-7/24/23,GCBAC,Sep2021,GCBAC_S1_12Sep2021,GCBAC_S1_12Sep2021_F1,Plant,plant_material,,1.024,seed casings
-7/24/23,GCBAC,Sep2021,GCBAC_S1_12Sep2021,GCBAC_S1_12Sep2021_F2,Anthropogenic,paper,,0.201,n/a
-6/26/23,GCBAC,Sep2021,GCBAC_S10_12Sep2021,GCBAC_S10_12Sep2021_F1,Invertebrate,legs_and_exoskeleton,,0.084,n/a
-6/26/23,GCBAC,Sep2021,GCBAC_S10_12Sep2021,GCBAC_S10_12Sep2021_F2,Vertebrate,bone,,0.051,bone fragments
-6/26/23,GCBAC,Sep2021,GCBAC_S10_12Sep2021,GCBAC_S10_12Sep2021_F3,Plant,plant_material,,0.001,n/a
-7/13/23,GCBAC,Sep2021,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.02,food_wrapper
-4/10/23,GCBAC,Sep2021,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F2,Plant,plant_material,,0.271,seeds/seed_casings
-4/10/23,GCBAC,Sep2021,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F3,Invertebrate,arthropod,,0.007,head/legs
-4/10/23,GCBAC,Sep2021,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F4,Vertebrate,hair,,0.01,fur
-4/10/23,GCBAC,Sep2021,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F5,Anthropogenic,paper,,0.007,n/a
-7/24/23,GCBAC,Sep2021,GCBAC_S2_12Sep2021,GCBAC_S2_12Sep2021_F1,Plant,plant_material,,1.411,seeds
-7/24/23,GCBAC,Sep2021,GCBAC_S2_12Sep2021,GCBAC_S2_12Sep2021_F2,Anthropogenic,paper,,0.002,n/a
-4/26/23,GCBAC,Sep2021,GCBAC_S5_12Sep2021,GCBAC_S5_12Sep2021_F1,Plant,plant_material,,0.048,n/a
-7/13/23,GCBAC,Sep2021,GCBAC_S6_12Sep2021,GCBAC_S6_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.006,small_plastic_fragment
-3/31/23,GCBAC,Sep2021,GCBAC_S6_12Sep2021,GCBAC_S6_12Sep2021_F2,Plant,plant_material,,0.119,n/a
-7/24/23,GCBAC,Sep2021,GCBAC_S7_12Sep2021,GCBAC_S7_12Sep2021_F1,Anthropogenic,paper,,0.178,n/a
-7/24/23,GCBAC,Sep2021,GCBAC_S7_12Sep2021,GCBAC_S7_12Sep2021_F1,Plant,seeds_plant_material,,0.638,n/a
-4/26/23,GCBAC,Sep2021,GCBAC_S8_12Sep2021,GCBAC_S8_12Sep2021_F1,Invertebrate,arthropod,,0.026,legs
-4/26/23,GCBAC,Sep2021,GCBAC_S8_12Sep2021,GCBAC_S8_12Sep2021_F2,Plant,plant_material,,0.157,seeds
-7/24/23,GCBAC,Sep2021,GCBAC_S9_12Sep2021,GCBAC_S9_12Sep2021_F1,Vertebrate,feather,,0.063,n/a
-7/24/23,GCBAC,Sep2021,GCBAC_S9_12Sep2021,GCBAC_S9_12Sep2021_F2,Plant,plant_material,,0.361,seeds and casings
-7/24/23,GCBAC,Sep2021,GCBAC_S9_12Sep2021,GCBAC_S9_12Sep2021_F3,Invertebrate,wing,,0.028,n/a
-4/26/23,GCBAR,Dec2021,GCBAR_S1_06Dec2021,GCBAR_S1_06Dec2021_F1,Anthropogenic,rubber,,0.064,n/a
-4/26/23,GCBAR,Dec2021,GCBAR_S1_06Dec2021,GCBAR_S1_06Dec2021_F2,Vertebrate,hair and bones,,0.385,fur and bone fragments
-4/26/23,GCBAR,Jun2021,GCBAR_S2_02Jun2021,GCBAR_S2_02Jun2021_F1,Anthropogenic,fibers,,0.002,n/a
-4/26/23,GCBAR,Jun2021,GCBAR_S2_02Jun2021,GCBAR_S2_02Jun2021_F2,Vertebrate,hair and bones,,0.033,rib fragment
-4/26/23,GCBAR,Jun2021,GCBAR_S2_02Jun2021,GCBAR_S2_02Jun2021_F3,Plant,plant_material,,0.016,n/a
-4/26/23,GCBAR,Dec2021,GCBAR_S2_05Dec2021,GCBAR_S2_05Dec2021_F1,Anthropogenic,paper,,0.001,n/a
-4/26/23,GCBAR,Dec2021,GCBAR_S2_05Dec2021,GCBAR_S2_05Dec2021_F2,Plant,plant_material,,0.002,n/a
-4/26/23,GCBAR,Dec2021,GCBAR_S2_05Dec2021,GCBAR_S2_05Dec2021_F3,Vertebrate,hair,,0.001,fur
-7/13/23,GCBAR,Jun2021,GCBAR_S3_02Jun2021,GCBAR_S3_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.93,plastic
-7/13/23,GCBAR,Jun2021,GCBAR_S3_02Jun2021,GCBAR_S3_02Jun2021_F2,Plant,plant_material,,0.021,plant_material
-6/26/23,GCBAR,Jun2021,GCBAR_S4_02Jun2021,BA_S4_02Jun2021_F1,Vertebrate,hair,,0.056,n/a
-6/26/23,GCBAR,Jun2021,GCBAR_S4_02Jun2021,BA_S4_02Jun2021_F2,Plant,plant_material,,0.069,seeds
-7/24/24,GC15H,Sep2021,GC15H_S1_11Sep2021,GCBAT_S1_11Sep2021_F1,Plant,seeds_plant_material,,0.342,n/a
-7/24/24,GC15H,Sep2021,GC15H_S1_11Sep2021,GCBAT_S1_11Sep2021_F2,Vertebrate,hair,,0.002,n/a
-4/26/23,GCBB,Sep2021,GCBB_S1_12Sep2021,GCBB_S1_12Sep2021_F1,Anthropogenic,not_sure,,0.348,n/a
-4/26/23,GCBB,Sep2021,GCBB_S1_12Sep2021,GCBB_S1_12Sep2021_F2,Plant,plant_material,,1.195,seeds
-4/26/23,GCBB,Dec2021,GCBB_S3_05Dec2021,GCBB_S3_05Dec2021_F1,Vertebrate,hair,,0.577,fur
-4/26/23,GCBB,Dec2021,GCBB_S3_05Dec2021,GCBB_S3_05Dec2021_F2,Plant,plant_material,,0.001,leaf piece?
-4/26/23,GCBH,Dec2021,GCBH_S1_05Dec2021,GCBH_S1_05Dec2021_F1,Vertebrate,hair and bones,,0.228,fur and bone fragments
-7/24/23,GCBH,Jun2021,GCBH_S10_05Jun2021,GCBH_S10_05Jun2021_F1,Vertebrate,bones_and_hair,,0.158,fur and bone fragments
-7/24/23,GCBH,Jun2021,GCBH_S10_05Jun2021,GCBH_S10_05Jun2021_F2,Plant,plant_material,,0.005,n/a
-7/24/23,GCBH,Dec2021,GCBH_S4_05Dec2021,GCBH_S2_05Dec2021_F1,Vertebrate,hair,,0.002,n/a
-7/24/23,GCBH,Dec2021,GCBH_S4_05Dec2021,GCBH_S2_05Dec2021_F2,Plant,plant_material,,0.108,seeds and casings
-7/24/23,GCBH,Dec2021,GCBH_S4_05Dec2021,GCBH_S2_05Dec2021_F3,Anthropogenic,paper_wrapping,,0.125,n/a
-4/26/23,GCBH,Jun2021,GCBH_S2_05Jun2021,GCBH_S2_05Jun2021_F1,Invertebrate,arthropod,,0.002,legs
-4/26/23,GCBH,Jun2021,GCBH_S2_05Jun2021,GCBH_S2_05Jun2021_F2,Vertebrate,hair and bones,,0.146,fur and bone fragments
-7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.105,food_wrapper
-7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F2,Plant,plant_material,,0.091,plant_pieces
-7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F3,Inorganic,rocks,,0.573,many_small_rocks
-7/13/23,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F4,Anthropogenic,paper,,0.022,paper
-10/16/24,GCBH,Sep2021,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F5,Vertebrate,feathers,,0.029,feathers
-4/19/23,GCBH,Jun2021,GCBH_S3_05Jun2021,GCBH_S3_05Jun2021_F1,Vertebrate,bones and hair,,0.465,fur
-6/26/23,GCBH,Sep2021,GCBH_S3_12Sep2021,GCBH_S3_12Sep2021_F1,Plant,plant_material,,0.05,n/a
-6/26/23,GCBH,Sep2021,GCBH_S3_12Sep2021,GCBH_S3_12Sep2021_F2,Vertebrate,hair_and_bones,,0.032,n/a
-7/24/23,GCBH,Jun2021,GCBH_S4_05Jun2021,GCBH_S4_05Jun2021_F1,Vertebrate,hair,,0.022,n/a
-7/24/23,GCBH,Jun2021,GCBH_S4_05Jun2021,GCBH_S4_05Jun2021_F2,Plant,plant_material,,0.719,seeds
-4/26/23,GCBH,Sep2021,GCBH_S4_12Sep2021,GCBH_S4_12Sep2021_F1,Invertebrate,arthropod,,0.04,legs
-4/26/23,GCBH,Sep2021,GCBH_S4_12Sep2021,GCBH_S4_12Sep2021_F2,Vertebrate,hair,,0.017,fur
-4/26/23,GCBH,Sep2021,GCBH_S4_12Sep2021,GCBH_S4_12Sep2021_F3,Plant,plant_material,,0.038,n/a
-7/24/23,GCBH,Jun2021,GCBH_S5_05Jun2021,GCBH_S5_05Jun2021_F1,Invertebrate,legs,,0.058,n/a
-7/24/23,GCBH,Jun2021,GCBH_S5_05Jun2021,GCBH_S5_05Jun2021_F2,Anthropogenic,flake,,0.062,n/a
-7/24/23,GCBH,Jun2021,GCBH_S5_05Jun2021,GCBH_S5_05Jun2021_F3,Plant,plant_material,,0.034,n/a
-7/13/23,GCBH,Sep2021,GCBH_S5_12Sep2021,GCBH_S5_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.008,food_wrapper
-7/13/23,GCBH,Sep2021,GCBH_S5_12Sep2021,GCBH_S5_12Sep2021_F2,Vertebrate,hair_and_bones,,0.638,bones_and_fur
-7/13/23,GCBH,Sep2021,GCBH_S5_12Sep2021,GCBH_S5_12Sep2021_F3,Plant,plant_material,,0.006,plant_material
-4/26/23,GCBH,Jun2021,GCBH_S6_05Jun2021,GCBH_S6_05Jun2021_F1,Anthropogenic,not_sure,,0.002,n/a
-4/26/23,GCBH,Jun2021,GCBH_S6_05Jun2021,GCBH_S6_05Jun2021_F2,Invertebrate,arthropod,,0.005,leg and wing
-4/26/23,GCBH,Jun2021,GCBH_S6_05Jun2021,GCBH_S6_05Jun2021_F3,Plant,plant_material,,0.003,seeds
-4/26/23,GCBH,Jun2021,GCBH_S6_05Jun2021,GCBH_S6_05Jun2021_F4,Vertebrate,feathers,,0.007,feathers
-7/24/23,GCBH,Jun2021,GCBH_S7_05Jun2021,GCBH_S7_05Jun2021_F1,Vertebrate,bones_and_hair,,0.068,n/a
-7/24/23,GCBH,Jun2021,GCBH_S7_05Jun2021,GCBH_S7_05Jun2021_F2,Invertebrate,leg,,0.025,n/a
-7/24/23,GCBH,Jun2021,GCBH_S7_05Jun2021,GCBH_S7_05Jun2021_F3,Plant,plant_material,,0.044,seeds and casings
-4/19/23,GCBH,Jun2021,GCBH_S8_05Jun2021,GCBH_S8_05Jun2021_F1,Vertebrate,bones and hair,,0.598,fur
-7/24/23,GCTL,Sep2021,GCTL_S3_14Sep2021,GCBU_S3_14Sep2021_F1,Plant,plant_material,,0.002,seeds
-7/24/23,GCTL,Sep2021,GCTL_S3_14Sep2021,GCBU_S3_14Sep2021_F2,Invertebrate,exoskeleton,,0.003,n/a
-7/24/23,GCTL,Sep2021,GCTL_S3_14Sep2021,GCBU_S3_14Sep2021_F3,Anthropogenic,paper,,0.416,n/a
-4/10/23,GCETRF,Jun2021,GCET1_S6_02Jun2021,GCET1_S6_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.108,plastic
-4/10/23,GCETRF,Jun2021,GCET1_S6_02Jun2021,GCET1_S6_02Jun2021_F2,Anthropogenic,paper,,0.016,n/a
-4/10/23,GCETRF,Jun2021,GCET1_S6_02Jun2021,GCET1_S6_02Jun2021_F3,Vertebrate,hair_and_bones,,0.167,fur_and_various_bone_fragments
-7/13/23,GCETRO,Jun2021,GCET2_S12_02Jun2021,GCET2_S12_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.235,plastic
-3/31/23,GCETRO,Jun2021,GCET2_S12_02Jun2021,GCET2_S12_02Jun2021_F2,Invertebrate,arthropod,,0.002,legs_exoskeleton_mandibles
-3/31/23,GCETRO,Jun2021,GCET2_S12_02Jun2021,GCET2_S12_02Jun2021_F3,Vertebrate,hair_and_bones,,0.442,many_bones_little_fur
-7/13/23,GCETRO,Jun2021,GCET2_S16_02Jun2021,GCET2_S16_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.031,plastic
-3/31/23,GCETRO,Jun2021,GCET2_S16_02Jun2021,GCET2_S16_02Jun2021_F2,Vertebrate,hair,,0.059,fur_and_dry_fractured_bone
-7/13/23,GCETRO,Jun2021,GCET2_S4_02Jun2021,GCET2_S4_02Jun2021_F1,Plastic,plastic,Blow Pop wrapper,0.155,blow_pop_wrapper
-3/31/23,GCETRO,Jun2021,GCET2_S4_02Jun2021,GCET2_S4_02Jun2021_F2,Vertebrate,hair,,0.52,fur
-7/13/23,GCETRO,Jun2021,GCET2_S5_02Jun2021,GCET2_S5_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.054,plastic_bag
-4/10/23,GCETRO,Jun2021,GCET2_S5_02Jun2021,GCET2_S5_02Jun2021_F2,Vertebrate,bone,,0.002,bone
-4/10/23,GCETRO,Jun2021,GCET2_S5_02Jun2021,GCET2_S5_02Jun2021_F3,Plant,plant_material,,0.004,seed_casing
-4/10/23,GCETRO,Jun2021,GCET2_S5_02Jun2021,GCET2_S5_02Jun2021_F4,Invertebrate,arthropod,,0.042,legs_various_other_parts 
-7/13/23,GCETRO,Jun2021,GCET2_S9_02Jun2021,GCET2_S9_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.077,food_wrapper
-3/31/23,GCETRO,Jun2021,GCET2_S9_02Jun2021,GCET2_S9_02Jun2021_F2,Vertebrate,hair_and_bones,,0.267,many_bones_little_fur
-3/31/23,GCETRO,Jun2021,GCET2_S9_02Jun2021,GCET2_S9_02Jun2021_F3,Invertebrate,arthropod,,0.009,legs_and_wing
-3/31/23,GCETRO,Jun2021,GCET2_S9_02Jun2021,GCET2_S9_02Jun2021_F4,Anthropogenic,paper,,0.243,n/a
-7/24/23,GCETRO,Jun2021,GCET2_S1_02Jun2021,GCETRO_S1_02Jun2021_F3,Vertebrate,bones_and_hair,,1.018,need to confirm with fragment data
-7/13/23,GCETRO,Jun2021,GCET2_S1_02Jun2021,GCETRO_S1_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.013,food_wrapper; need to confirm with fragment physical data
-7/24/23,GCETRO,Jun2021,GCET2_S1_02Jun2021,GCETRO_S1_02Jun2021_F2,Anthropogenic,paper,,0.074,n/a
-7/13/23,GCETRF,Jun2021,GCET1_S1_02Jun2021,GCETRF_S1_02Jun2021_F2,Anthropogenic,paper,,0.11,paper
-7/13/23,GCETRF,Jun2021,GCET1_S1_02Jun2021,GCETRF_S1_02Jun2021_F3,Vertebrate,hair,,0.002,fur
-7/13/23,GCETRO,Dec2021,GCETRO_S1_06Dec2021,GCETRO_S1_06Dec2021_F1,Plastic,plastic,unidentifiable wrapper,0.016,candy_wrapper
-7/13/23,GCETRO,Dec2021,GCETRO_S1_06Dec2021,GCETRO_S1_06Dec2021_F2,Plastic,plastic,unidentifiable wrapper,0.055,plastic
-3/31/23,GCETRO,Dec2021,GCETRO_S1_06Dec2021,GCETRO_S1_06Dec2021_F3,Vertebrate,hair,,0.116,fur
-3/31/23,GCETRO,Dec2021,GCETRO_S1_06Dec2021,GCETRO_S1_06Dec2021_F4,Plant,plant_material,,0.048,seed_husks
-7/24/23,GCETRO,Jun2021,GCET2_S10_02Jun2021,GCETRO_S10_02Jun2021_F1,Vertebrate,bones_and_hair,,0.002,fur and bone fragments
-7/24/23,GCETRO,Jun2021,GCET2_S10_02Jun2021,GCETRO_S10_02Jun2021_F2,Invertebrate,legs,,0.001,n/a
-7/24/23,GCETRO,Jun2021,GCET2_S10_02Jun2021,GCETRO_S10_02Jun2021_F3,Anthropogenic,paper,,0.001,wrappers
-7/24/23,GCETRO,Jun2021,GCET2_S10_02Jun2021,GCETRO_S10_02Jun2021_F4,Plant,plant_material,,0.032,n/a
-7/13/23,GCETRO,Sep2021,GCETRO_S10_14Sep2021,GCETRO_S10_14Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.316,wrapper
-7/13/23,GCETRO,Sep2021,GCETRO_S10_14Sep2021,GCETRO_S10_14Sep2021_F2,Invertebrate,arthropod,,0.002,legs_and_exoskeleton/chitin
-7/13/23,GCETRO,Sep2021,GCETRO_S10_14Sep2021,GCETRO_S10_14Sep2021_F3,Plant,plant_material,,0.005,dead_grass
-7/13/23,GCETRO,Sep2021,GCETRO_S10_14Sep2021,GCETRO_S10_14Sep2021_F4,Vertebrate,bones,,0.153,bones_and_teeth_of_rodent
-3/31/23,GCETRF,Jun2021,GCETRF_S2_02Jun2021,GCETRF_S2_02Jun2021_F2,Invertebrate,arthropod,,0.046,legs_and_exoskeleton_chitin
-7/13/23,GCETRF,Jun2021,GCETRF_S2_02Jun2021,GCETRF_S2_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.131,plastic
-7/24/23,GCETRO,Sep2021,GCETRO_S2_14Sep2021,GCETRO_S2_14Sep2021_F1,Plant,plant_material,,0.027,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S2_14Sep2021,GCETRO_S2_14Sep2021_F2,Vertebrate,bones_and_hair,,0.127,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S2_14Sep2021,GCETRO_S2_14Sep2021_F3,Anthropogenic,paper,,0.046,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S3_14Sep2021,GCETRO_S3_14Sep2021_F1,Plant,plant_material,,0.03,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S3_14Sep2021,GCETRO_S3_14Sep2021_F2,Vertebrate,bones_and_hair,,0.047,fur and bone fragments
-7/24/23,GCETRO,Sep2021,GCETRO_S3_14Sep2021,GCETRO_S3_14Sep2021_F3,Invertebrate,paper,,0.133,n/a
-7/13/23,GCETRO,Dec2021,GCETRO_S3_06Dec2021,GCETRO_S3_16Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.257,plastic
-3/31/23,GCETRO,Dec2021,GCETRO_S3_06Dec2021,GCETRO_S3_16Jun2021_F2,Vertebrate,hair,,0.284,fur
-7/24/23,GCETRO,Jun2021,GCET1_S4_02Jun2021,GCET1_S4_02Jun2021_F1,Vertebrate,hair_and_bones,,0.695,n/a
-7/24/23,GCETRO,Jun2021,GCET1_S5_02Jun2021,GCET1_S5_02Jun2021_F1,Vertebrate,bones_and_hair,,0.292,fur and bone fragments
-7/24/23,GCETRO,Jun2021,GCET1_S5_02Jun2021,GCET1_S5_02Jun2021_F2,Anthropogenic,paper,,0.079,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S5_14Sep2021,GCETRO_S5_14Sep2021_F1,Vertebrate,hair,,0.568,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S5_14Sep2021,GCETRO_S5_14Sep2021_F2,Invertebrate,exoskeleton,,0.109,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S5_14Sep2021,GCETRO_S5_14Sep2021_F3,Plant,seed_casings,,0.117,n/a
-7/24/23,GCETRO,Jun2021,GCET2_S6_02Jun2021,GCETRO_S6_02Jun2021_F1,Vertebrate,hair_and_bones,,0.353,n/a
-7/24/23,GCETRO,Jun2021,GCET2_S6_02Jun2021,GCETRO_S6_02Jun2021_F2,Anthropogenic,paper,,0.303,n/a
-7/24/23,GCETRO,Dec2021,GCETRO_S6_06Dec2021,GCETRO_S6_06Dec2021_F1,Anthropogenic,paper,,0.047,n/a
-7/24/23,GCETRO,Dec2021,GCETRO_S6_06Dec2021,GCETRO_S6_06Dec2021_F2,Vertebrate,hair_teeth,,0.222,n/a
-7/24/23,GCETRO,Dec2021,GCETRO_S6_06Dec2021,GCETRO_S6_06Dec2021_F3,Invertebrate,exoskeleton,,0.024,n/a
-7/13/23,GCETRO,Sep2021,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.084,food_wrapper
-4/10/23,GCETRO,Sep2021,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F2,Vertebrate,bones,,0.054,bone_fragments
-4/10/23,GCETRO,Sep2021,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F3,Invertebrate,arthropod,,0.032,legs
-4/10/23,GCETRO,Sep2021,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F4,Plant,plant_material,,0.055,seed_casing
-4/10/23,GCETRO,Sep2021,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F5,Anthropogenic,paper,,0.062,paper
-7/24/23,GCETRO,Jun2021,GCETRO_S7_02Jun2021,GCETRO_S7_02Jun2021_F1,Invertebrate,legs_and_exoskeleton,,0.102,n/a
-7/24/23,GCETRO,Jun2021,GCETRO_S7_02Jun2021,GCETRO_S7_02Jun2021_F2,Vertebrate,bones,,0.192,bone fragments
-7/24/23,GCETRO,Jun2021,GCETRO_S7_02Jun2021,GCETRO_S7_02Jun2021_F3,Anthropogenic,not_sure,,0.038,n/a
-7/13/23,GCETRO,Dec2021,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F1,Plastic,plastic,unidentifiable wrapper,0.078,plastic
-3/31/23,GCETRO,Dec2021,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F2,Invertebrate,arthropod,,0.007,wings
-3/31/23,GCETRO,Dec2021,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F3,Vertebrate,hair,,0.002,fur
-3/31/23,GCETRO,Dec2021,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F4,Plant,plant_material,,0.01,n/a
-3/31/23,GCETRO,Dec2021,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F5,Anthropogenic,paper,,0.276,"says_""USDA organic""_on_label "
-7/24/23,GCETRO,Sep2021,GCETRO_S7_14Sep2021,GCETRO_S7_14Sep2021_F1,Vertebrate,bones_and_teeth,,0.197,bone fragments
-7/24/23,GCETRO,Sep2021,GCETRO_S7_14Sep2021,GCETRO_S7_14Sep2021_F2,Plant,plant_material,,0.084,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S7_14Sep2021,GCETRO_S7_14Sep2021_F3,Invertebrate,legs,,0.002,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S7_14Sep2021,GCETRO_S7_14Sep2021_F4,Anthropogenic,paper,,0.116,n/a
-7/24/23,GCETRO,Jun2021,GCETRO_S8_02Jun2021,GCETRO_S8_02Jun2021_F1,Vertebrate,hair,,0.09,n/a
-7/24/23,GCETRO,Jun2021,GCETRO_S8_02Jun2021,GCETRO_S8_02Jun2021_F2,Anthropogenic,paper,,0.566,n/a
-7/24/23,GCETRO,Jun2021,GCETRO_S8_02Jun2021,GCETRO_S8_02Jun2021_F2,Vertebrate,hair,,0.051,n/a
-7/24/23,GCETRO,Jun2021,GCETRO_S8_02Jun2021,GCETRO_S8_02Jun2021_F3,Anthropogenic,paper,,0.001,green_wrappers
-7/24/23,GCETRO,Jun2021,GCETRO_S8_02Jun2021,GCETRO_S8_02Jun2021_F3,Invertebrate,plant_material,,0.002,n/a
-7/24/23,GCETRO,Jun2021,GCETRO_S8_02Jun2021,GCETRO_S8_02Jun2021_F4,Plant,exoskeleton,,0.001,n/a
-7/24/23,GCETRO,Jun2021,GCETRO_S8_02Jun2021,GCETRO_S8_02Jun2021_F4,Plant,plant_material,,0.027,rocks?
-4/26/23,GCETRO,Dec2021,GCETRO_S8_06Dec2021,GCETRO_S8_06Dec2021_F1,Plant,plant_material,,0.001,grass?
-4/26/23,GCETRO,Dec2021,GCETRO_S8_06Dec2021,GCETRO_S8_06Dec2021_F2,Vertebrate,hair,,0.028,fur
-7/24/23,GCETRO,Sep2021,GCETRO_S8_14Sep2021,GCETRO_S8_14Sep2021_F1,Invertebrate,hair,,0.002,n/a
-7/24/23,GCETRO,Sep2021,GCETRO_S8_14Sep2021,GCETRO_S8_14Sep2021_F2,Vertebrate,hair,,0.595,n/a
-4/19/23,GCJH,May2021,GCJH_S1_06May2021,GCJH_S1_06May2021_F1,Plant,plant_material,,0.087,n/a
-7/24/23,GCJH,May2021,GCJH_S2_06May2021,GCJH_S2_06May2021_F1,Anthropogenic,fibers,,0.028,n/a
-7/24/23,GCJH,May2021,GCJH_S2_06May2021,GCJH_S2_06May2021_F2,Plant,plant_material,,0.089,seeds
-7/13/23,GCTL,Dec2021,GCTL_S1_06Dec2021,GCTL_S1_06Dec2021_F1,Plastic,plastic,Milky Way wrapper,0.023,milky_way_wrapper
-4/10/23,GCTL,Dec2021,GCTL_S1_06Dec2021,GCTL_S1_06Dec2021_F2,Plant,plant_material,,0.096,n/a
-7/24/23,GCTC,Sep2021,GCTC_S1_13Sep2021,GCTC_S1_13Sep2021_F1,Plant,plant_material,,2.861,seeds and casings
-4/26/23,GCTL,Dec2021,GCTL_S2_06Dec2021,GCTC_S2_06Dec2021_F1,Anthropogenic,paper,,0.216,straw wrapper?; reverted to TL based on data
-4/26/23,GCTL,Dec2021,GCTL_S2_06Dec2021,GCTC_S2_06Dec2021_F2,Plant,plant_material,,0.033,n/a
-4/26/23,GCTC,Sep2021,GCTC_S2_13Sep2021,GCTC_S2_13Sep2021_F1,Plant,plant_material,,0.025,seeds and casings; reverted to TC based on date
-4/26/23,GCTC,Sep2021,GCTC_S2_13Sep2021,GCTC_S2_13Sep2021_F2,Invertebrate,arthropod,,0.001,flying arthropod
-6/26/23,GCTC,Sep2021,GCTC_S4_13Sep2021,GCTC_S4_13Sep2021_F1,Plant,seeds_plant_material,,1.062,n/a
-4/26/23,GCTL,Sep2021,GCTL_S2_14Sep2021,GCTL_S2_14Sep2021_F1,Anthropogenic,paper,,0.418,re-weighed 3-25-22; originally two lines in spreadsheet; see lab day 4-19-2023
-4/26/23,GCTL,Sep2021,GCTL_S2_14Sep2021,GCTL_S2_14Sep2021_F2,Vertebrate,hair,,0.036,n/a
-4/26/23,GCTL,Sep2021,GCTL_S2_14Sep2021,GCTL_S2_14Sep2021_F3,Plant,plant_material,,0.037,re-weighed 3-25-24; originally two lines in spreadsheet; see lab day 4-19-2023
-7/13/23,GCTL,Sep2021,GCTL_S4_14Sep2021,GCTL_S4_14Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.336,plastic
-3/31/23,GCTL,Sep2021,GCTL_S4_14Sep2021,GCTL_S4_14Sep2021_F2,Invertebrate,arthropod,,0.161,molt
-3/31/23,GCTL,Sep2021,GCTL_S4_14Sep2021,GCTL_S4_14Sep2021_F3,Vertebrate,hair_and_bones,,0.105,2_bones
-7/24/23,GCWP,Jun2021,GCWP_S1_05Jun2021,GCWP_S1_05Jun2021_F1,Anthropogenic,paper,,0.191,n/a
-7/24/23,GCWP,Jun2021,GCWP_S1_05Jun2021,GCWP_S1_05Jun2021_F2,Plant,seeds_plant_material,,0.337,n/a
-7/24/23,GCWP,Jun2021,GCWP_S1_05Jun2021,GCWP_S1_05Jun2021_F3,Invertebrate,legs_and_exoskeleton,,0.002,n/a
-7/24/23,GCWP,Jun2021,GCWP_S2_05Jun2021,GCWP_S2_05Jun2021_F1,Invertebrate,exoskeleton,,0.026,n/a
-7/24/23,GCWP,Jun2021,GCWP_S2_05Jun2021,GCWP_S2_05Jun2021_F2,Anthropogenic,rubber?,,0.002,n/a
-7/24/23,GCWP,Jun2021,GCWP_S2_05Jun2021,GCWP_S2_05Jun2021_F3,Vertebrate,hair,,0.04,n/a
-7/24/23,GCWP,Jun2021,GCWP_S2_05Jun2021,GCWP_S2_05Jun2021_F4,Plant,plant_material,,0.002,n/a
-7/24/23,GCWP,Jun2021,GCWP_S3_05Jun2021,GCWP_S3_05Jun2021_F1,Plant,plant_material,,0.224,seeds
-7/24/23,GCWP,Jun2021,GCWP_S3_05Jun2021,GCWP_S3_05Jun2021_F2,Anthropogenic,paper,,0.096,n/a
-4/26/23,GCWP,Jun2021,GCWP_S4_05Jun2021,GCWP_S4_05Jun2021_F1,Invertebrate,arthropod,,0.003,exoskeleton
-4/26/23,GCWP,Jun2021,GCWP_S4_05Jun2021,GCWP_S4_05Jun2021_F2,Plant,plant_material,,0.023,seed and leaf fragments
-4/7/24,GCBH,Sep2021,GCBH_S1_12Sep2021,GCBH_S1_12Sep2021_F1,Vertebrate,hair,,0.2864,need to locate
-4/7/24,GCBH,Sep2021,GCBH_S1_12Sep2021,GCBH_S1_12Sep2021_F2,Anthropogenic,paper,,0.2864,need to locate
-6/26/23,GCETRO,Sep2021,GCETRO_S1_14Sep2021,GCETRO_S1_14Sep2021_F1,Plant,plant_material,,0.594,n/a
-4/7/24,GCNRM,Jun2021,GCNRM_S1_26Jul2021,NRM_S1_26Jul2021_F1,Anthropogenic,paper,,0.059,n/a
-4/7/24,GCTL,Sep2021,GCTL_S1_14Sep2021,GCTL_S1_14Sep2021_F1,Vertebrate,bone,,0.353,need to locate
-4/7/24,GCTL,Sep2021,GCTL_S1_14Sep2021,GCTL_S1_14Sep2021_F2,Anthropogenic,foil,,0.353,need to locate
+date_added,unique_site,month_year,sample_id,fragment_id,fragment_type,fragment_description,visual_id,fragment_weight,notes
+4/26/2023,GC15H,21-Dec,GC15H_S1_04Dec2021,GC15H_S1_04Dec2021_F1,Vertebrate,hair,,0.63,fur
+4/26/2023,GC15H,21-Dec,GC15H_S1_04Dec2021,GC15H_S1_04Dec2021_F2,Plant,plant_material,,1.534,seeds and other fragments
+4/19/2023,GC15H,21-Jul,GC15H_S1_25Jul2021,GC15H_S1_25Jul2021_F1,Plant,plant_material,,0.002,n/a
+4/26/2023,GC15H,21-Dec,GC15H_S2_04Dec2021,GC15H_S2_04Dec2021_F1,Plant,plant_material,,0.711,possible petals
+4/26/2023,GC15H,21-Jul,GC15H_S2_25Jul2021,GC15H_S2_25Jul2021_F1,Plant,plant_material,,0.172,seed
+4/26/2023,GC15H,21-Jul,GC15H_S2_25Jul2021,GC15H_S2_25Jul2021_F2,Vertebrate,hair,,0.001,fur
+4/19/2023,GC15H,21-Dec,GC15H_S3_04Dec2021,GC15H_S3_04Dec2021_F1,Plant,plant_material,,0.052,n/a
+4/19/2023,GC15H,21-Dec,GC15H_S3_04Dec2021,GC15H_S3_04Dec2021_F2,Vertebrate,hair,,0.255,fur
+4/26/2023,GC15H,21-Jul,GC15H_S3_25Jul2021,GC15H_S3_25Jul2021_F1,Plant,plant_material,,0.348,seeds and casings
+4/26/2023,GCBAC,21-Jun,GCBAC_S1_08Jun2021,GCBAC_S1_08Jun2021_F1,Plant,plant_material,,2.21,seeds and casings
+7/24/2023,GCBAC,21-Sep,GCBAC_S1_12Sep2021,GCBAC_S1_12Sep2021_F1,Plant,plant_material,,1.024,seed casings
+7/24/2023,GCBAC,21-Sep,GCBAC_S1_12Sep2021,GCBAC_S1_12Sep2021_F2,Anthropogenic,paper,,0.201,n/a
+6/26/2023,GCBAC,21-Sep,GCBAC_S10_12Sep2021,GCBAC_S10_12Sep2021_F1,Invertebrate,legs_and_exoskeleton,,0.084,n/a
+6/26/2023,GCBAC,21-Sep,GCBAC_S10_12Sep2021,GCBAC_S10_12Sep2021_F2,Vertebrate,bone,,0.051,bone fragments
+6/26/2023,GCBAC,21-Sep,GCBAC_S10_12Sep2021,GCBAC_S10_12Sep2021_F3,Plant,plant_material,,0.001,n/a
+7/13/2023,GCBAC,21-Sep,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.02,food_wrapper
+4/10/2023,GCBAC,21-Sep,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F2,Plant,plant_material,,0.271,seeds/seed_casings
+4/10/2023,GCBAC,21-Sep,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F3,Invertebrate,arthropod,,0.007,head/legs
+4/10/2023,GCBAC,21-Sep,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F4,Vertebrate,hair,,0.01,fur
+4/10/2023,GCBAC,21-Sep,GCBAC_S11_12Sep2021,GCBAC_S11_12Sep2021_F5,Anthropogenic,paper,,0.007,n/a
+7/24/2023,GCBAC,21-Sep,GCBAC_S2_12Sep2021,GCBAC_S2_12Sep2021_F1,Plant,plant_material,,1.411,seeds
+7/24/2023,GCBAC,21-Sep,GCBAC_S2_12Sep2021,GCBAC_S2_12Sep2021_F2,Anthropogenic,paper,,0.002,n/a
+4/26/2023,GCBAC,21-Sep,GCBAC_S5_12Sep2021,GCBAC_S5_12Sep2021_F1,Plant,plant_material,,0.048,n/a
+7/13/2023,GCBAC,21-Sep,GCBAC_S6_12Sep2021,GCBAC_S6_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.006,small_plastic_fragment
+3/31/2023,GCBAC,21-Sep,GCBAC_S6_12Sep2021,GCBAC_S6_12Sep2021_F2,Plant,plant_material,,0.119,n/a
+7/24/2023,GCBAC,21-Sep,GCBAC_S7_12Sep2021,GCBAC_S7_12Sep2021_F1,Anthropogenic,paper,,0.178,n/a
+7/24/2023,GCBAC,21-Sep,GCBAC_S7_12Sep2021,GCBAC_S7_12Sep2021_F1,Plant,seeds_plant_material,,0.638,n/a
+4/26/2023,GCBAC,21-Sep,GCBAC_S8_12Sep2021,GCBAC_S8_12Sep2021_F1,Invertebrate,arthropod,,0.026,legs
+4/26/2023,GCBAC,21-Sep,GCBAC_S8_12Sep2021,GCBAC_S8_12Sep2021_F2,Plant,plant_material,,0.157,seeds
+7/24/2023,GCBAC,21-Sep,GCBAC_S9_12Sep2021,GCBAC_S9_12Sep2021_F1,Vertebrate,feather,,0.063,n/a
+7/24/2023,GCBAC,21-Sep,GCBAC_S9_12Sep2021,GCBAC_S9_12Sep2021_F2,Plant,plant_material,,0.361,seeds and casings
+7/24/2023,GCBAC,21-Sep,GCBAC_S9_12Sep2021,GCBAC_S9_12Sep2021_F3,Invertebrate,wing,,0.028,n/a
+4/26/2023,GCBAR,21-Dec,GCBAR_S1_06Dec2021,GCBAR_S1_06Dec2021_F1,Anthropogenic,rubber,,0.064,n/a
+4/26/2023,GCBAR,21-Dec,GCBAR_S1_06Dec2021,GCBAR_S1_06Dec2021_F2,Vertebrate,hair and bones,,0.385,fur and bone fragments
+4/26/2023,GCBAR,21-Jun,GCBAR_S2_02Jun2021,GCBAR_S2_02Jun2021_F1,Anthropogenic,fibers,,0.002,n/a
+4/26/2023,GCBAR,21-Jun,GCBAR_S2_02Jun2021,GCBAR_S2_02Jun2021_F2,Vertebrate,hair and bones,,0.033,rib fragment
+4/26/2023,GCBAR,21-Jun,GCBAR_S2_02Jun2021,GCBAR_S2_02Jun2021_F3,Plant,plant_material,,0.016,n/a
+4/26/2023,GCBAR,21-Dec,GCBAR_S2_05Dec2021,GCBAR_S2_05Dec2021_F1,Anthropogenic,paper,,0.001,n/a
+4/26/2023,GCBAR,21-Dec,GCBAR_S2_05Dec2021,GCBAR_S2_05Dec2021_F2,Plant,plant_material,,0.002,n/a
+4/26/2023,GCBAR,21-Dec,GCBAR_S2_05Dec2021,GCBAR_S2_05Dec2021_F3,Vertebrate,hair,,0.001,fur
+7/13/2023,GCBAR,21-Jun,GCBAR_S3_02Jun2021,GCBAR_S3_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.93,plastic
+7/13/2023,GCBAR,21-Jun,GCBAR_S3_02Jun2021,GCBAR_S3_02Jun2021_F2,Plant,plant_material,,0.021,plant_material
+6/26/2023,GCBAR,21-Jun,GCBAR_S4_02Jun2021,BA_S4_02Jun2021_F1,Vertebrate,hair,,0.056,n/a
+6/26/2023,GCBAR,21-Jun,GCBAR_S4_02Jun2021,BA_S4_02Jun2021_F2,Plant,plant_material,,0.069,seeds
+7/24/2024,GC15H,21-Sep,GC15H_S1_11Sep2021,GCBAT_S1_11Sep2021_F1,Plant,seeds_plant_material,,0.342,n/a
+7/24/2024,GC15H,21-Sep,GC15H_S1_11Sep2021,GCBAT_S1_11Sep2021_F2,Vertebrate,hair,,0.002,n/a
+4/26/2023,GCBB,21-Sep,GCBB_S1_12Sep2021,GCBB_S1_12Sep2021_F1,Anthropogenic,not_sure,,0.348,n/a
+4/26/2023,GCBB,21-Sep,GCBB_S1_12Sep2021,GCBB_S1_12Sep2021_F2,Plant,plant_material,,1.195,seeds
+4/26/2023,GCBB,21-Dec,GCBB_S3_05Dec2021,GCBB_S3_05Dec2021_F1,Vertebrate,hair,,0.577,fur
+4/26/2023,GCBB,21-Dec,GCBB_S3_05Dec2021,GCBB_S3_05Dec2021_F2,Plant,plant_material,,0.001,leaf piece?
+4/26/2023,GCBH,21-Dec,GCBH_S1_05Dec2021,GCBH_S1_05Dec2021_F1,Vertebrate,hair and bones,,0.228,fur and bone fragments
+7/24/2023,GCBH,21-Jun,GCBH_S10_05Jun2021,GCBH_S10_05Jun2021_F1,Vertebrate,bones_and_hair,,0.158,fur and bone fragments
+7/24/2023,GCBH,21-Jun,GCBH_S10_05Jun2021,GCBH_S10_05Jun2021_F2,Plant,plant_material,,0.005,n/a
+7/24/2023,GCBH,21-Dec,GCBH_S4_05Dec2021,GCBH_S2_05Dec2021_F1,Vertebrate,hair,,0.002,n/a
+7/24/2023,GCBH,21-Dec,GCBH_S4_05Dec2021,GCBH_S2_05Dec2021_F2,Plant,plant_material,,0.108,seeds and casings
+7/24/2023,GCBH,21-Dec,GCBH_S4_05Dec2021,GCBH_S2_05Dec2021_F3,Anthropogenic,paper_wrapping,,0.125,n/a
+4/26/2023,GCBH,21-Jun,GCBH_S2_05Jun2021,GCBH_S2_05Jun2021_F1,Invertebrate,arthropod,,0.002,legs
+4/26/2023,GCBH,21-Jun,GCBH_S2_05Jun2021,GCBH_S2_05Jun2021_F2,Vertebrate,hair and bones,,0.146,fur and bone fragments
+7/13/2023,GCBH,21-Sep,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.689,food_wrapper
+7/13/2023,GCBH,21-Sep,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F2,Plant,plant_material,,0.091,plant_pieces
+7/13/2023,GCBH,21-Sep,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F3,Rocks,,,,many_small_rocks
+7/13/2023,GCBH,21-Sep,GCBH_S2_12Sep2021,GCBH_S2_12Sep2021_F4,Anthropogenic,paper,,0.022,paper
+4/19/2023,GCBH,21-Jun,GCBH_S3_05Jun2021,GCBH_S3_05Jun2021_F1,Vertebrate,bones and hair,,0.465,fur
+6/26/2023,GCBH,21-Sep,GCBH_S3_12Sep2021,GCBH_S3_12Sep2021_F1,Plant,plant_material,,0.05,n/a
+6/26/2023,GCBH,21-Sep,GCBH_S3_12Sep2021,GCBH_S3_12Sep2021_F2,Vertebrate,hair_and_bones,,0.032,n/a
+7/24/2023,GCBH,21-Jun,GCBH_S4_05Jun2021,GCBH_S4_05Jun2021_F1,Vertebrate,hair,,0.022,n/a
+7/24/2023,GCBH,21-Jun,GCBH_S4_05Jun2021,GCBH_S4_05Jun2021_F2,Plant,plant_material,,0.719,seeds
+4/26/2023,GCBH,21-Sep,GCBH_S4_12Sep2021,GCBH_S4_12Sep2021_F1,Invertebrate,arthropod,,0.04,legs
+4/26/2023,GCBH,21-Sep,GCBH_S4_12Sep2021,GCBH_S4_12Sep2021_F2,Vertebrate,hair,,0.017,fur
+4/26/2023,GCBH,21-Sep,GCBH_S4_12Sep2021,GCBH_S4_12Sep2021_F3,Plant,plant_material,,0.038,n/a
+7/24/2023,GCBH,21-Jun,GCBH_S5_05Jun2021,GCBH_S5_05Jun2021_F1,Invertebrate,legs,,0.058,n/a
+7/24/2023,GCBH,21-Jun,GCBH_S5_05Jun2021,GCBH_S5_05Jun2021_F2,Anthropogenic,flake,,0.062,n/a
+7/24/2023,GCBH,21-Jun,GCBH_S5_05Jun2021,GCBH_S5_05Jun2021_F3,Plant,plant_material,,0.034,n/a
+7/13/2023,GCBH,21-Sep,GCBH_S5_12Sep2021,GCBH_S5_12Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.008,food_wrapper
+7/13/2023,GCBH,21-Sep,GCBH_S5_12Sep2021,GCBH_S5_12Sep2021_F2,Vertebrate,hair_and_bones,,0.638,bones_and_fur
+7/13/2023,GCBH,21-Sep,GCBH_S5_12Sep2021,GCBH_S5_12Sep2021_F3,Plant,plant_material,,0.006,plant_material
+4/26/2023,GCBH,21-Jun,GCBH_S6_05Jun2021,GCBH_S6_05Jun2021_F1,Anthropogenic,not_sure,,0.002,n/a
+4/26/2023,GCBH,21-Jun,GCBH_S6_05Jun2021,GCBH_S6_05Jun2021_F2,Invertebrate,arthropod,,0.005,leg and wing
+4/26/2023,GCBH,21-Jun,GCBH_S6_05Jun2021,GCBH_S6_05Jun2021_F3,Plant,plant_material,,0.003,seeds
+4/26/2023,GCBH,21-Jun,GCBH_S6_05Jun2021,GCBH_S6_05Jun2021_F4,Vertebrate,feathers,,0.007,feathers
+7/24/2023,GCBH,21-Jun,GCBH_S7_05Jun2021,GCBH_S7_05Jun2021_F1,Vertebrate,bones_and_hair,,0.068,n/a
+7/24/2023,GCBH,21-Jun,GCBH_S7_05Jun2021,GCBH_S7_05Jun2021_F2,Invertebrate,leg,,0.025,n/a
+7/24/2023,GCBH,21-Jun,GCBH_S7_05Jun2021,GCBH_S7_05Jun2021_F3,Plant,plant_material,,0.044,seeds and casings
+4/19/2023,GCBH,21-Jun,GCBH_S8_05Jun2021,GCBH_S8_05Jun2021_F1,Vertebrate,bones and hair,,0.598,fur
+7/24/2023,GCTL,21-Sep,GCTL_S3_14Sep2021,GCBU_S3_14Sep2021_F1,Plant,plant_material,,0.002,seeds
+7/24/2023,GCTL,21-Sep,GCTL_S3_14Sep2021,GCBU_S3_14Sep2021_F2,Invertebrate,exoskeleton,,0.003,n/a
+7/24/2023,GCTL,21-Sep,GCTL_S3_14Sep2021,GCBU_S3_14Sep2021_F3,Anthropogenic,paper,,0.416,n/a
+4/10/2023,GCETRO,21-Jun,GCET1_S6_02Jun2021,GCET1_S6_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.108,plastic
+4/10/2023,GCETRO,21-Jun,GCET1_S6_02Jun2021,GCET1_S6_02Jun2021_F2,Anthropogenic,paper,,0.016,n/a
+4/10/2023,GCETRO,21-Jun,GCET1_S6_02Jun2021,GCET1_S6_02Jun2021_F3,Vertebrate,hair_and_bones,,0.167,fur_and_various_bone_fragments
+7/13/2023,GCETRO,21-Jun,GCET2_S12_02Jun2021,GCET2_S12_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.235,plastic
+3/31/2023,GCETRO,21-Jun,GCET2_S12_02Jun2021,GCET2_S12_02Jun2021_F2,Invertebrate,arthropod,,0.002,legs_exoskeleton_mandibles
+3/31/2023,GCETRO,21-Jun,GCET2_S12_02Jun2021,GCET2_S12_02Jun2021_F3,Vertebrate,hair_and_bones,,0.442,many_bones_little_fur
+7/13/2023,GCETRO,21-Jun,GCET2_S16_02Jun2021,GCET2_S16_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.031,plastic
+3/31/2023,GCETRO,21-Jun,GCET2_S16_02Jun2021,GCET2_S16_02Jun2021_F2,Vertebrate,hair,,0.059,fur_and_dry_fractured_bone
+7/13/2023,GCETRO,21-Jun,GCET2_S4_02Jun2021,GCET2_S4_02Jun2021_F1,Plastic,plastic,Blow Pop wrapper,0.155,blow_pop_wrapper
+3/31/2023,GCETRO,21-Jun,GCET2_S4_02Jun2021,GCET2_S4_02Jun2021_F2,Vertebrate,hair,,0.52,fur
+7/13/2023,GCETRO,21-Jun,GCET2_S5_02Jun2021,GCET2_S5_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.054,plastic_bag
+4/10/2023,GCETRO,21-Jun,GCET2_S5_02Jun2021,GCET2_S5_02Jun2021_F2,Vertebrate,bone,,0.002,bone
+4/10/2023,GCETRO,21-Jun,GCET2_S5_02Jun2021,GCET2_S5_02Jun2021_F3,Plant,plant_material,,0.004,seed_casing
+4/10/2023,GCETRO,21-Jun,GCET2_S5_02Jun2021,GCET2_S5_02Jun2021_F4,Invertebrate,arthropod,,0.042,legs_various_other_parts 
+7/13/2023,GCETRO,21-Jun,GCET2_S9_02Jun2021,GCET2_S9_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.077,food_wrapper
+3/31/2023,GCETRO,21-Jun,GCET2_S9_02Jun2021,GCET2_S9_02Jun2021_F2,Vertebrate,hair_and_bones,,0.267,many_bones_little_fur
+3/31/2023,GCETRO,21-Jun,GCET2_S9_02Jun2021,GCET2_S9_02Jun2021_F3,Invertebrate,arthropod,,0.009,legs_and_wing
+3/31/2023,GCETRO,21-Jun,GCET2_S9_02Jun2021,GCET2_S9_02Jun2021_F4,Anthropogenic,paper,,0.243,n/a
+7/24/2023,GCETRO,21-Jun,GCET2_S1_02Jun2021,GCETRO_S1_02Jun2021_F3,Vertebrate,bones_and_hair,,1.018,need to confirm with fragment data
+7/13/2023,GCETRO,21-Jun,GCET2_S1_02Jun2021,GCETRO_S1_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.013,food_wrapper; need to confirm with fragment physical data
+7/24/2023,GCETRO,21-Jun,GCET2_S1_02Jun2021,GCETRO_S1_02Jun2021_F2,Anthropogenic,paper,,0.074,n/a
+7/13/2023,GCETRO,21-Jun,GCET1_S1_02Jun2021,GCETRF_S1_02Jun2021_F2,Anthropogenic,paper,,0.11,paper
+7/13/2023,GCETRO,21-Jun,GCET1_S1_02Jun2021,GCETRF_S1_02Jun2021_F3,Vertebrate,hair,,0.002,fur
+7/13/2023,GCETRO,21-Dec,GCETRO_S1_06Dec2021,GCETRO_S1_06Dec2021_F1,Plastic,plastic,unidentifiable wrapper,0.016,candy_wrapper
+7/13/2023,GCETRO,21-Dec,GCETRO_S1_06Dec2021,GCETRO_S1_06Dec2021_F2,Plastic,plastic,unidentifiable wrapper,0.055,plastic
+3/31/2023,GCETRO,21-Dec,GCETRO_S1_06Dec2021,GCETRO_S1_06Dec2021_F3,Vertebrate,hair,,0.116,fur
+3/31/2023,GCETRO,21-Dec,GCETRO_S1_06Dec2021,GCETRO_S1_06Dec2021_F4,Plant,plant_material,,0.048,seed_husks
+7/24/2023,GCETRO,21-Jun,GCET2_S10_02Jun2021,GCETRO_S10_02Jun2021_F1,Vertebrate,bones_and_hair,,0.002,fur and bone fragments
+7/24/2023,GCETRO,21-Jun,GCET2_S10_02Jun2021,GCETRO_S10_02Jun2021_F2,Invertebrate,legs,,0.001,n/a
+7/24/2023,GCETRO,21-Jun,GCET2_S10_02Jun2021,GCETRO_S10_02Jun2021_F3,Anthropogenic,paper,,0.001,wrappers
+7/24/2023,GCETRO,21-Jun,GCET2_S10_02Jun2021,GCETRO_S10_02Jun2021_F4,Plant,plant_material,,0.032,n/a
+7/13/2023,GCETRO,21-Sep,GCETRO_S10_14Sep2021,GCETRO_S10_14Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.316,wrapper
+7/13/2023,GCETRO,21-Sep,GCETRO_S10_14Sep2021,GCETRO_S10_14Sep2021_F2,Invertebrate,arthropod,,0.002,legs_and_exoskeleton/chitin
+7/13/2023,GCETRO,21-Sep,GCETRO_S10_14Sep2021,GCETRO_S10_14Sep2021_F3,Plant,plant_material,,0.005,dead_grass
+7/13/2023,GCETRO,21-Sep,GCETRO_S10_14Sep2021,GCETRO_S10_14Sep2021_F4,Vertebrate,bones,,0.153,bones_and_teeth_of_rodent
+3/31/2023,GCETRO,21-Jun,GCETRF_S2_02Jun2021,GCETRF_S2_02Jun2021_F2,Invertebrate,arthropod,,0.046,legs_and_exoskeleton_chitin
+7/13/2023,GCETRO,21-Jun,GCETRF_S2_02Jun2021,GCETRF_S2_02Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.131,plastic
+7/24/2023,GCETRO,21-Sep,GCETRO_S2_14Sep2021,GCETRO_S2_14Sep2021_F1,Plant,plant_material,,0.027,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S2_14Sep2021,GCETRO_S2_14Sep2021_F2,Vertebrate,bones_and_hair,,0.127,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S2_14Sep2021,GCETRO_S2_14Sep2021_F3,Anthropogenic,paper,,0.046,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S3_14Sep2021,GCETRO_S3_14Sep2021_F1,Plant,plant_material,,0.03,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S3_14Sep2021,GCETRO_S3_14Sep2021_F2,Vertebrate,bones_and_hair,,0.047,fur and bone fragments
+7/24/2023,GCETRO,21-Sep,GCETRO_S3_14Sep2021,GCETRO_S3_14Sep2021_F3,Invertebrate,paper,,0.133,n/a
+7/13/2023,GCETRO,21-Dec,GCETRO_S3_06Dec2021,GCETRO_S3_16Jun2021_F1,Plastic,plastic,unidentifiable wrapper,0.257,plastic
+3/31/2023,GCETRO,21-Dec,GCETRO_S3_06Dec2021,GCETRO_S3_16Jun2021_F2,Vertebrate,hair,,0.284,fur
+7/24/2023,GCETRO,21-Jun,GCET1_S4_02Jun2021,GCET1_S4_02Jun2021_F1,Vertebrate,hair_and_bones,,0.695,n/a
+7/24/2023,GCETRO,21-Jun,GCET1_S5_02Jun2021,GCET1_S5_02Jun2021_F1,Vertebrate,bones_and_hair,,0.292,fur and bone fragments
+7/24/2023,GCETRO,21-Jun,GCET1_S5_02Jun2021,GCET1_S5_02Jun2021_F2,Anthropogenic,paper,,0.079,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S5_14Sep2021,GCETRO_S5_14Sep2021_F1,Vertebrate,hair,,0.568,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S5_14Sep2021,GCETRO_S5_14Sep2021_F2,Invertebrate,exoskeleton,,0.109,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S5_14Sep2021,GCETRO_S5_14Sep2021_F3,Plant,seed_casings,,0.117,n/a
+7/24/2023,GCETRO,21-Jun,GCET2_S6_02Jun2021,GCETRO_S6_02Jun2021_F1,Vertebrate,hair_and_bones,,0.353,n/a
+7/24/2023,GCETRO,21-Jun,GCET2_S6_02Jun2021,GCETRO_S6_02Jun2021_F2,Anthropogenic,paper,,0.303,n/a
+7/24/2023,GCETRO,21-Dec,GCETRO_S6_06Dec2021,GCETRO_S6_06Dec2021_F1,Anthropogenic,paper,,0.047,n/a
+7/24/2023,GCETRO,21-Dec,GCETRO_S6_06Dec2021,GCETRO_S6_06Dec2021_F2,Vertebrate,hair_teeth,,0.222,n/a
+7/24/2023,GCETRO,21-Dec,GCETRO_S6_06Dec2021,GCETRO_S6_06Dec2021_F3,Invertebrate,exoskeleton,,0.024,n/a
+7/13/2023,GCETRO,21-Sep,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.084,food_wrapper
+4/10/2023,GCETRO,21-Sep,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F2,Vertebrate,bones,,0.054,bone_fragments
+4/10/2023,GCETRO,21-Sep,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F3,Invertebrate,arthropod,,0.032,legs
+4/10/2023,GCETRO,21-Sep,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F4,Plant,plant_material,,0.055,seed_casing
+4/10/2023,GCETRO,21-Sep,GCETRO_S6_14Sep2021,GCETRO_S6_14Sep2021_F5,Anthropogenic,paper,,0.062,paper
+7/24/2023,GCETRO,21-Jun,GCETRO_S7_02Jun2021,GCETRO_S7_02Jun2021_F1,Invertebrate,legs_and_exoskeleton,,0.102,n/a
+7/24/2023,GCETRO,21-Jun,GCETRO_S7_02Jun2021,GCETRO_S7_02Jun2021_F2,Vertebrate,bones,,0.192,bone fragments
+7/24/2023,GCETRO,21-Jun,GCETRO_S7_02Jun2021,GCETRO_S7_02Jun2021_F3,Anthropogenic,not_sure,,0.038,n/a
+7/13/2023,GCETRO,21-Dec,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F1,Plastic,plastic,unidentifiable wrapper,0.078,plastic
+3/31/2023,GCETRO,21-Dec,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F2,Invertebrate,arthropod,,0.007,wings
+3/31/2023,GCETRO,21-Dec,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F3,Vertebrate,hair,,0.002,fur
+3/31/2023,GCETRO,21-Dec,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F4,Plant,plant_material,,0.01,n/a
+3/31/2023,GCETRO,21-Dec,GCETRO_S7_06Dec2021,GCETRO_S7_06Dec2021_F5,Anthropogenic,paper,,0.276,"says_""USDA organic""_on_label "
+7/24/2023,GCETRO,21-Sep,GCETRO_S7_14Sep2021,GCETRO_S7_14Sep2021_F1,Vertebrate,bones_and_teeth,,0.197,bone fragments
+7/24/2023,GCETRO,21-Sep,GCETRO_S7_14Sep2021,GCETRO_S7_14Sep2021_F2,Plant,plant_material,,0.084,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S7_14Sep2021,GCETRO_S7_14Sep2021_F3,Invertebrate,legs,,0.002,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S7_14Sep2021,GCETRO_S7_14Sep2021_F4,Anthropogenic,paper,,0.116,n/a
+7/24/2023,GCETRO,21-Jun,GCETRO_S8_02Jun2021A,GCETRO_S8_02Jun2021A_F1,Vertebrate,hair,,0.09,n/a
+7/24/2023,GCETRO,21-Jun,GCETRO_S8_02Jun2021A,GCETRO_S8_02Jun2021A_F2,Anthropogenic,paper,,0.566,n/a
+7/24/2023,GCETRO,21-Jun,GCETRO_S8_02Jun2021A,GCETRO_S8_02Jun2021A_F3,Invertebrate,exoskeleton,,0.002,n/a
+7/24/2023,GCETRO,21-Jun,GCETRO_S8_02Jun2021A,GCETRO_S8_02Jun2021A_F4,Plant,plant_material,,0.001,n/a
+4/26/2023,GCETRO,21-Dec,GCETRO_S8_06Dec2021,GCETRO_S8_06Dec2021_F1,Plant,plant_material,,0.001,grass?
+4/26/2023,GCETRO,21-Dec,GCETRO_S8_06Dec2021,GCETRO_S8_06Dec2021_F2,Vertebrate,hair,,0.028,fur
+7/24/2023,GCETRO,21-Sep,GCETRO_S8_14Sep2021,GCETRO_S8_14Sep2021_F1,Invertebrate,hair,,0.002,n/a
+7/24/2023,GCETRO,21-Sep,GCETRO_S8_14Sep2021,GCETRO_S8_14Sep2021_F2,Vertebrate,hair,,0.595,n/a
+4/19/2023,GCJH,21-May,GCJH_S1_06May2021,GCJH_S1_06May2021_F1,Plant,plant_material,,0.087,n/a
+7/24/2023,GCJH,21-May,GCJH_S2_06May2021,GCJH_S2_06May2021_F1,Anthropogenic,fibers,,0.028,n/a
+7/24/2023,GCJH,21-May,GCJH_S2_06May2021,GCJH_S2_06May2021_F2,Plant,plant_material,,0.089,seeds
+7/13/2023,GCTL,21-Dec,GCTL_S1_06Dec2021,GCTL_S1_06Dec2021_F1,Plastic,plastic,Milky Way wrapper,0.023,milky_way_wrapper
+4/10/2023,GCTL,21-Dec,GCTL_S1_06Dec2021,GCTL_S1_06Dec2021_F2,Plant,plant_material,,0.096,n/a
+7/24/2023,GCBAC,21-Sep,GCTC_S1_13Sep2021,GCTC_S1_13Sep2021_F1,Plant,plant_material,,2.861,seeds and casings
+4/26/2023,GCTL,21-Dec,GCTL_S2_06Dec2021,GCTC_S2_06Dec2021_F1,Anthropogenic,paper,,0.216,straw wrapper?; reverted to TL based on data
+4/26/2023,GCTL,21-Dec,GCTL_S2_06Dec2021,GCTC_S2_06Dec2021_F2,Plant,plant_material,,0.033,n/a
+4/26/2023,GCBAC,21-Sep,GCTC_S2_13Sep2021,GCTC_S2_13Sep2021_F1,Plant,plant_material,,0.025,seeds and casings; reverted to TC based on date
+4/26/2023,GCBAC,21-Sep,GCTC_S2_13Sep2021,GCTC_S2_13Sep2021_F2,Invertebrate,arthropod,,0.001,flying arthropod
+6/26/2023,GCBAC,21-Sep,GCTC_S4_13Sep2021,GCTC_S4_13Sep2021_F1,Plant,seeds_plant_material,,1.062,n/a
+4/26/2023,GCTL,21-Sep,GCTL_S2_14Sep2021,GCTL_S2_14Sep2021_F1,Anthropogenic,paper,,0.418,re-weighed 3-25-22; originally two lines in spreadsheet; see lab day 4-19-2023
+4/26/2023,GCTL,21-Sep,GCTL_S2_14Sep2021,GCTL_S2_14Sep2021_F2,Vertebrate,hair,,0.036,n/a
+4/26/2023,GCTL,21-Sep,GCTL_S2_14Sep2021,GCTL_S2_14Sep2021_F3,Plant,plant_material,,0.037,re-weighed 3-25-24; originally two lines in spreadsheet; see lab day 4-19-2023
+7/13/2023,GCTL,21-Sep,GCTL_S4_14Sep2021,GCTL_S4_14Sep2021_F1,Plastic,plastic,unidentifiable wrapper,0.336,plastic
+3/31/2023,GCTL,21-Sep,GCTL_S4_14Sep2021,GCTL_S4_14Sep2021_F2,Invertebrate,arthropod,,0.161,molt
+3/31/2023,GCTL,21-Sep,GCTL_S4_14Sep2021,GCTL_S4_14Sep2021_F3,Vertebrate,hair_and_bones,,0.105,2_bones
+7/24/2023,GCBAC,21-Jun,GCWP_S1_05Jun2021,GCWP_S1_05Jun2021_F1,Anthropogenic,paper,,0.191,n/a
+7/24/2023,GCBAC,21-Jun,GCWP_S1_05Jun2021,GCWP_S1_05Jun2021_F2,Plant,seeds_plant_material,,0.337,n/a
+7/24/2023,GCBAC,21-Jun,GCWP_S1_05Jun2021,GCWP_S1_05Jun2021_F3,Invertebrate,legs_and_exoskeleton,,0.002,n/a
+7/24/2023,GCBAC,21-Jun,GCWP_S2_05Jun2021,GCWP_S2_05Jun2021_F1,Invertebrate,exoskeleton,,0.026,n/a
+7/24/2023,GCBAC,21-Jun,GCWP_S2_05Jun2021,GCWP_S2_05Jun2021_F2,Anthropogenic,rubber?,,0.002,n/a
+7/24/2023,GCBAC,21-Jun,GCWP_S2_05Jun2021,GCWP_S2_05Jun2021_F3,Vertebrate,hair,,0.04,n/a
+7/24/2023,GCBAC,21-Jun,GCWP_S2_05Jun2021,GCWP_S2_05Jun2021_F4,Plant,plant_material,,0.002,n/a
+7/24/2023,GCBAC,21-Jun,GCWP_S3_05Jun2021,GCWP_S3_05Jun2021_F1,Plant,plant_material,,0.224,seeds
+7/24/2023,GCBAC,21-Jun,GCWP_S3_05Jun2021,GCWP_S3_05Jun2021_F2,Anthropogenic,paper,,0.096,n/a
+4/26/2023,GCBAC,21-Jun,GCWP_S4_05Jun2021,GCWP_S4_05Jun2021_F1,Invertebrate,arthropod,,0.003,exoskeleton
+4/26/2023,GCBAC,21-Jun,GCWP_S4_05Jun2021,GCWP_S4_05Jun2021_F2,Plant,plant_material,,0.023,seed and leaf fragments
+4/7/2024,GCBH,21-Sep,GCBH_S1_12Sep2021,GCBH_S1_12Sep2021_F1,Vertebrate,hair,,0.2864,need to locate
+4/7/2024,GCBH,21-Sep,GCBH_S1_12Sep2021,GCBH_S1_12Sep2021_F2,Anthropogenic,paper,,0.2864,need to locate
+6/26/2023,GCETRO,21-Sep,GCETRO_S1_14Sep2021,GCETRO_S1_14Sep2021_F1,Plant,plant_material,,0.594,n/a
+4/7/2024,GCNRM,21-Jun,GCNRM_S1_26Jul2021,NRM_S1_26Jul2021_F1,Anthropogenic,paper,,0.059,n/a
+4/7/2024,GCTL,21-Sep,GCTL_S1_14Sep2021,GCTL_S1_14Sep2021_F1,Vertebrate,bone,,0.353,need to locate
+4/7/2024,GCTL,21-Sep,GCTL_S1_14Sep2021,GCTL_S1_14Sep2021_F2,Anthropogenic,foil,,0.353,need to locate
+4/10/2025,GC15H,21-Sep,GC15H_S3_13Sep2021,GCBAT_S3_13Sep2021_F1,Plant,seeds,,1.3461,
+4/10/2025,GC15H,21-Sep,GC15H_S3_13Sep2021,GCBAT_S3_13Sep2021_F2,Vertebrate,bone,,0.2238,
+4/10/2025,GC15H,21-Sep,GC15H_S3_13Sep2021,GCBAT_S3_13Sep2021_F3,Rocks,,,,
+4/10/2025,GC15H,21-Sep,GC15H_S2_13Sep2021,GCBAT_S1_13Sep2021_F1,Vertebrate,hair_bone,,1.3501,
+4/10/2025,GC15H,21-Sep,GC15H_S2_13Sep2021,GCBAT_S1_13Sep2021_F2,Invertebrate,exoskeleton,,0.17,
+4/10/2025,GC15H,21-Sep,GC15H_S2_13Sep2021,GCBAT_S1_13Sep2021_F3,Plastic,plastic,,0.0333,
+4/10/2025,GCBH,21-Jun,GCBH_S9_05Jun2021,GCBH_S9_05Jun2021_F1,Vertebrate,bones_hair,,1.152,
+4/10/2025,GCBAR,21-Jun,GCBAR_S1_02Jun2021,BA_S1_02Jun2021_F1,Plant,plant_material,,1.5344,
+4/10/2025,GCETRO,21-Jun,GCET2_S11_02Jun2021,GCET2_S11_02Jun2021_F1,Vertebrate,bones_hair,,0.9306,
+4/10/2025,GCETRO,21-Jun,GCET2_S11_02Jun2021,GCET2_S11_02Jun2021_F2,Invertebrate,exoskeleton,,0.0068,
+4/10/2025,GCETRO,21-Jun,GCETRO_S3_02Jun2021,GCET1_S3_02Jun2021_F1,Plant,plant_material,,0.7292,
+4/10/2025,GCETRO,21-Jun,GCETRO_S3_02Jun2021,GCET1_S3_02Jun2021_F2,Vertebrate,hair,,0.0034,
+4/10/2025,GCETRO,21-Jun,GCETRO_S3_02Jun2021,GCET1_S3_02Jun2021_F3,Invertebrate,,,0.0017,
+4/10/2025,GCNRM,21-Dec,GCNRM_S1_02Dec2021,GCNRM_S1_02Dec2021_F1,Plant,acorn_shell,,0.1747,
+4/10/2025,GCNRM,21-Dec,GCNRM_S1_02Dec2021,GCNRM_S1_02Dec2021_F2,Vertebrate,hair_bone,,0.7834,
+4/10/2025,GCETRO,21-Sep,GC15H_S4_11Sep2021,GCBAT_S4_11Sep2021_F1,Plant,seeds,,0.7948,
+4/10/2025,GCETRO,21-Sep,GC15H_S4_11Sep2021,GCBAT_S4_11Sep2021_F2,Vertebrate,hair,,0.206,

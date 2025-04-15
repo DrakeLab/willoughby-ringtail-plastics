@@ -1,0 +1,17 @@
+unique_site,name,site_area,park_area,ringtail_scat,structured,vehicle_access,BOBCAT,GRAYFOX,RACCOON,SPOTTEDSKUNK,STRIPEDSKUNK,RINGTAIL,DOMESTICCAT,COYOTE,carnivore_richness,scat_identity,n_scat
+GC15H,1.5 mile house on Bright Angel Trail,GCBAT,Inner Canyon,yes,no,no,3,12,3,3,3,0,0,0,5,other mesocarnivore,10
+GCBAC,Bright Angel Campground,GCBAC,Inner Canyon,yes,no,no,2,2,0,25,0,32,0,0,4,ringtail,17
+GCBAR,Bright Angel Hotel Roof,GCVillage,Rim,yes,yes,yes,0,0,40,0,0,8,2,0,3,procyonid,6
+GCBB,Boat Beach ,GCBAC,Inner Canyon,yes,no,no,0,2,0,16,0,10,0,0,3,carnivore,2
+GCBH,BunkHouse,GCBAC,Inner Canyon,yes,yes,no,0,0,0,3,0,12,0,0,2,ringtail,16
+GCC,Clinic Forest,GCVillage,Rim,no,no,yes,0,4,0,0,0,0,0,8,2,other mesocarnivore,0
+GCETCR,El Tovar Restaurant,GCVillage,Rim,yes,yes,yes,0,0,0,0,0,24,0,0,1,ringtail,0
+GCETRO,El Tovar Hotel Office,GCVillage,Rim,yes,yes,yes,0,0,0,0,0,104,0,0,1,ringtail,30
+GCHR,Hermit's Rest,GCVillage,Rim,no,yes,yes,0,20,0,8,12,20,0,0,4,carnivore,0
+GCJH,NPS Staff house,GCBAC,Inner Canyon,yes,yes,no,0,0,0,0,0,0,0,0,0,no carnivore,2
+GCNRB,Lodge Basement,GCNRM,Rim,no,yes,yes,0,0,0,0,0,0,0,0,0,no carnivore,0
+GCNRM,Motel,GCNRM,Rim,yes,no,yes,0,8,0,0,0,0,0,0,1,other mesocarnivore,2
+GCPP,Powell Point,GCVillage,Rim,no,no,yes,0,24,0,0,0,0,0,0,1,other mesocarnivore,0
+GCRT,Rim Trail,GCVillage,Rim,no,no,yes,0,3,0,0,0,0,0,0,1,other mesocarnivore,0
+GCTL,Thunderbird Lodge ,GCVillage,Rim,yes,yes,yes,0,0,0,0,0,9,0,0,1,ringtail,6
+GCYL,Yavapai Lodge,GCVillage,Rim,no,yes,yes,0,0,0,0,0,0,0,0,0,no carnivore,0

@@ -1,0 +1,17 @@
+unique_site,name,site_area,park_area,ringtail_scat,structured,vehicle_access
+GC15H,1.5 mile house on Bright Angel Trail,GCBAT,Inner Canyon,yes,no,no
+GCBAC,Bright Angel Campground,GCBAC,Inner Canyon,yes,no,no
+GCBAR,Bright Angel Hotel Roof,GCVillage,Rim,yes,yes,yes
+GCBB,Boat Beach ,GCBAC,Inner Canyon,yes,no,no
+GCBH,BunkHouse,GCBAC,Inner Canyon,yes,yes,no
+GCC,Clinic Forest,GCVillage,Rim,no,no,yes
+GCETCR,El Tovar Restaurant,GCVillage,Rim,yes,yes,yes
+GCETRO,El Tovar Hotel Office,GCVillage,Rim,yes,yes,yes
+GCHR,Hermit's Rest,GCVillage,Rim,no,yes,yes
+GCJH,NPS Staff house,GCBAC,Inner Canyon,yes,yes,no
+GCNRB,Lodge Basement,GCNRM,Rim,no,yes,yes
+GCNRM,Motel,GCNRM,Rim,yes,no,yes
+GCPP,Powell Point,GCVillage,Rim,no,no,yes
+GCRT,Rim Trail,GCVillage,Rim,no,no,yes
+GCTL,Thunderbird Lodge ,GCVillage,Rim,yes,yes,yes
+GCYL,Yavapai Lodge,GCVillage,Rim,no,yes,yes
