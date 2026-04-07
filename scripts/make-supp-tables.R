@@ -39,6 +39,8 @@ plastics <- data.frame(
 )
 
 supp_t1 <- kable(plastics,
+                 format = "latex", 
+                 col.names = c("Polymer", "Abbreviation", "Flame color", "Burn odor", "Control item"),
       booktabs = TRUE,
       linesep = "") %>%
   kable_styling(
@@ -63,6 +65,7 @@ pw_diet <- data.frame(
 )
 
 supp_T2 <- kable(pw_diet,
+                 format = "latex",
       col.names = c("Diet category", "F", "FO (%)", "RFO (%)", "W (%)"),
       align = c("r", "c", "c", "c", "c"), 
       booktabs = TRUE,
@@ -89,6 +92,7 @@ depositor_tab <- data.frame(
 )
 
 supp_T3 <- kable(depositor_tab,
+                 format = "latex",
                  col.names = c("Common name", "Species", "Latrine depositor", "Diameter (cm)", "Scat shape", "Sources"),
                  booktabs = TRUE,
                  linesep = "") %>%
